@@ -1,0 +1,51 @@
+[
+  {
+    "id": "seoul-bistro",
+    "chef": { "name": "김하늘", "season": 1, "team": "black" },
+    "restaurant": {
+      "name": "서울 비스트로",
+      "category": ["다이닝", "퓨전"],
+      "address": "서울특별시 중구 세종대로 110",
+      "lat": 37.5665,
+      "lng": 126.978,
+      "naverPlaceUrl": "https://map.naver.com/place/00000000",
+      "naverBookingUrl": "https://booking.naver.com/booking/0000",
+      "phone": "02-123-4567",
+      "instagram": "https://instagram.com/seoulbistro"
+    },
+    "tags": ["런치", "예약가능", "코스"],
+    "updatedAt": "2024-09-01"
+  },
+  {
+    "id": "busan-harbor",
+    "chef": { "name": "박우진", "season": 1, "team": "white" },
+    "restaurant": {
+      "name": "부산 하버",
+      "category": ["시푸드", "오마카세"],
+      "address": "부산광역시 해운대구 센텀중앙로 55",
+      "lat": 35.1698,
+      "lng": 129.1311,
+      "naverPlaceUrl": "https://map.naver.com/place/11111111",
+      "phone": "051-987-6543",
+      "instagram": "https://instagram.com/busanhabor"
+    },
+    "tags": ["디너", "전망"],
+    "updatedAt": "2024-08-15"
+  },
+  {
+    "id": "jeju-farm",
+    "chef": { "name": "이서준", "season": 2, "team": "unknown" },
+    "restaurant": {
+      "name": "제주 팜 테이블",
+      "category": ["농가식", "현지재료"],
+      "address": "제주특별자치도 제주시 첨단로 242",
+      "lat": 33.4507,
+      "lng": 126.5707,
+      "naverPlaceUrl": "https://map.naver.com/place/22222222",
+      "naverBookingUrl": "",
+      "phone": "064-555-8888"
+    },
+    "tags": ["브런치", "드라이브"],
+    "updatedAt": "2024-07-20"
+  }
+]
