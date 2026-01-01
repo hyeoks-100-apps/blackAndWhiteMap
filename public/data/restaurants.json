@@ -1,0 +1,172 @@
+[
+  {
+    "id": "choidot-choi-hyunseok",
+    "chef": { "name": "최현석", "season": 1, "team": "white" },
+    "restaurant": {
+      "name": "쵸이닷",
+      "category": ["이탈리안", "파인다이닝"],
+      "address": "서울 강남구 도산대로 457 3층",
+      "lat": 37.5238,
+      "lng": 127.0492,
+      "naverPlaceUrl": "https://naver.me/xdIkQEK4",
+      "naverBookingUrl": "https://app.catchtable.co.kr/ct/shop/choidot?from=share&type=VISIT_RESERVATION",
+      "phone": "02-518-0318",
+      "instagram": ""
+    },
+    "tags": ["디너", "코스", "예약가능"],
+    "updatedAt": "2026-01-01"
+  },
+  {
+    "id": "yunseoul-kim-doyoon",
+    "chef": { "name": "김도윤", "season": 1, "team": "white" },
+    "restaurant": {
+      "name": "윤서울",
+      "category": ["한식", "파인다이닝"],
+      "address": "서울 강남구 선릉로 805 1층",
+      "lat": 37.5271,
+      "lng": 127.0398,
+      "naverPlaceUrl": "https://naver.me/xlW1OvWO",
+      "naverBookingUrl": "",
+      "phone": "",
+      "instagram": "https://www.instagram.com/yunseoul.restaurant"
+    },
+    "tags": ["미쉐린", "코스", "예약가능"],
+    "updatedAt": "2026-01-01"
+  },
+  {
+    "id": "hongbogak-yeo-kyungrae",
+    "chef": { "name": "여경래", "season": 1, "team": "white" },
+    "restaurant": {
+      "name": "홍보각",
+      "category": ["중식", "호텔"],
+      "address": "서울 강남구 봉은사로 130 노보텔 앰배서더 강남 LL층",
+      "lat": 37.5049,
+      "lng": 127.0287,
+      "naverPlaceUrl": "https://naver.me/5bdxlVR6",
+      "naverBookingUrl": "https://app.catchtable.co.kr/ct/shop/hongbogak?type=DINING",
+      "phone": "0507-1381-6479",
+      "instagram": ""
+    },
+    "tags": ["예약가능", "호텔", "중식"],
+    "updatedAt": "2026-01-01"
+  },
+  {
+    "id": "gamailshik-an-yuseong",
+    "chef": { "name": "안유성", "season": 1, "team": "white" },
+    "restaurant": {
+      "name": "가매일식",
+      "category": ["일식", "정식"],
+      "address": "광주 서구 상무대로 1104-26",
+      "lat": 35.1542,
+      "lng": 126.8517,
+      "naverPlaceUrl": "https://naver.me/5L3o7ygP",
+      "naverBookingUrl": "",
+      "phone": "062-352-7711",
+      "instagram": ""
+    },
+    "tags": ["정식", "전화예약", "광주"],
+    "updatedAt": "2026-01-01"
+  },
+  {
+    "id": "opetitvert-park-junwoo",
+    "chef": { "name": "박준우", "season": 1, "team": "white" },
+    "restaurant": {
+      "name": "카페 오쁘띠베르",
+      "category": ["카페", "디저트"],
+      "address": "서울 종로구 자하문로 47-1 1층 카페",
+      "lat": 37.5798,
+      "lng": 126.9707,
+      "naverPlaceUrl": "https://naver.me/G6fq0p6h",
+      "naverBookingUrl": "",
+      "phone": "02-735-7569",
+      "instagram": ""
+    },
+    "tags": ["디저트", "와인", "카페"],
+    "updatedAt": "2026-01-01"
+  },
+  {
+    "id": "evett-joseph-lidgerwood",
+    "chef": { "name": "조셉 리저우드", "season": 1, "team": "white" },
+    "restaurant": {
+      "name": "에빗",
+      "category": ["양식", "파인다이닝"],
+      "address": "서울 강남구 도산대로45길 10-5 1층 EVETT",
+      "lat": 37.523,
+      "lng": 127.0354,
+      "naverPlaceUrl": "https://naver.me/F5bFaeQb",
+      "naverBookingUrl": "",
+      "phone": "0507-1399-1029",
+      "instagram": ""
+    },
+    "tags": ["미쉐린", "코스", "예약가능"],
+    "updatedAt": "2026-01-01"
+  },
+  {
+    "id": "chinmil-jeju-oh-seduk",
+    "chef": { "name": "오세득", "season": 1, "team": "white" },
+    "restaurant": {
+      "name": "친밀 제주",
+      "category": ["양식", "버거"],
+      "address": "제주 제주시 조천읍 남조로 1781",
+      "lat": 33.4209,
+      "lng": 126.6572,
+      "naverPlaceUrl": "https://naver.me/xGiB9XBw",
+      "naverBookingUrl": "https://app.catchtable.co.kr/ct/shop/chinnmeal_jeju",
+      "phone": "0507-1394-0387",
+      "instagram": ""
+    },
+    "tags": ["제주", "예약가능", "캐주얼"],
+    "updatedAt": "2026-01-01"
+  },
+  {
+    "id": "fabri-kitchen-fabri",
+    "chef": { "name": "파브리", "season": 1, "team": "white" },
+    "restaurant": {
+      "name": "파브리키친",
+      "category": ["이탈리안", "캐주얼"],
+      "address": "서울 용산구 한강대로15길 23-6 1층",
+      "lat": 37.5306,
+      "lng": 126.9654,
+      "naverPlaceUrl": "https://naver.me/FpZqNpWF",
+      "naverBookingUrl": "https://app.catchtable.co.kr/ct/shop/FabriKitchenYongsan",
+      "phone": "070-7576-4830",
+      "instagram": ""
+    },
+    "tags": ["런치", "캐주얼", "예약가능"],
+    "updatedAt": "2026-01-01"
+  },
+  {
+    "id": "morino-aruyo-kim-seungmin",
+    "chef": { "name": "김승민", "season": 1, "team": "white" },
+    "restaurant": {
+      "name": "모리노아루요",
+      "category": ["일식", "덮밥"],
+      "address": "제주 제주시 애월읍 하소로 769-58 모리노아루요",
+      "lat": 33.4349,
+      "lng": 126.3335,
+      "naverPlaceUrl": "https://naver.me/xbwnpzi6",
+      "naverBookingUrl": "",
+      "phone": "0507-1377-4253",
+      "instagram": "https://www.instagram.com/morino_aruyo"
+    },
+    "tags": ["제주", "덮밥", "주차가능"],
+    "updatedAt": "2026-01-01"
+  },
+  {
+    "id": "bicena-bang-gisu",
+    "chef": { "name": "방기수", "season": 1, "team": "white" },
+    "restaurant": {
+      "name": "비채나",
+      "category": ["한식", "파인다이닝", "호텔"],
+      "address": "서울 송파구 올림픽로 300 롯데월드타워 81층",
+      "lat": 37.5126,
+      "lng": 127.1026,
+      "naverPlaceUrl": "https://naver.me/IDBoqTug",
+      "naverBookingUrl": "",
+      "phone": "02-3213-1261",
+      "instagram": ""
+    },
+    "tags": ["전망", "코스", "예약가능", "특별한날"],
+    "updatedAt": "2026-01-01"
+  }
+]
