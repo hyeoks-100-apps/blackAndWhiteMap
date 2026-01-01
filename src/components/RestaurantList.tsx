@@ -24,6 +24,9 @@ export function RestaurantList({ restaurants, selectedId, onSelect }: ListProps)
             <div className="list-title">{item.restaurant.name}</div>
             <div className="list-sub">{item.chef.name}</div>
             <div className="badges">
+              {item.chef.isTop7 && (
+                <span className="badge primary">TOP7</span>
+              )}
               {item.chef.season && <span className="badge">시즌 {item.chef.season}</span>}
               <span className={`badge team ${item.chef.team}`}>팀 {item.chef.team}</span>
               {item.tags?.slice(0, 3).map((tag) => (

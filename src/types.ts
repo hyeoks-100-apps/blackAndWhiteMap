@@ -4,6 +4,7 @@ export interface Chef {
   name: string;
   season?: number;
   team: Team;
+  isTop7?: boolean;
 }
 
 export interface RestaurantInfo {
@@ -31,4 +32,5 @@ export interface Filters {
   season: 'all' | number;
   team: 'all' | Team;
   onlyBooking: boolean;
+  onlyTop7: boolean;
 }

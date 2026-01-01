@@ -22,6 +22,10 @@ export const filterRestaurants = (restaurants: Restaurant[], filters: Filters): 
   const searchTerm = normalize(filters.search);
 
   return restaurants.filter((item) => {
+    if (filters.onlyTop7 && !item.chef.isTop7) {
+      return false;
+    }
+
     if (filters.season !== 'all' && item.chef.season !== filters.season) {
       return false;
     }

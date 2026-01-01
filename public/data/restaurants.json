@@ -1,7 +1,7 @@
 [
   {
     "id": "choidot-choi-hyunseok",
-    "chef": { "name": "최현석", "season": 1, "team": "white" },
+    "chef": { "name": "최현석", "season": 1, "team": "white", "isTop7": true },
     "restaurant": {
       "name": "쵸이닷",
       "category": ["이탈리안", "파인다이닝"],
@@ -18,7 +18,7 @@
   },
   {
     "id": "yunseoul-kim-doyoon",
-    "chef": { "name": "김도윤", "season": 1, "team": "white" },
+    "chef": { "name": "김도윤", "season": 1, "team": "white", "isTop7": true },
     "restaurant": {
       "name": "윤서울",
       "category": ["한식", "파인다이닝"],
@@ -35,7 +35,7 @@
   },
   {
     "id": "hongbogak-yeo-kyungrae",
-    "chef": { "name": "여경래", "season": 1, "team": "white" },
+    "chef": { "name": "여경래", "season": 1, "team": "white", "isTop7": true },
     "restaurant": {
       "name": "홍보각",
       "category": ["중식", "호텔"],
@@ -52,7 +52,7 @@
   },
   {
     "id": "gamailshik-an-yuseong",
-    "chef": { "name": "안유성", "season": 1, "team": "white" },
+    "chef": { "name": "안유성", "season": 1, "team": "white", "isTop7": true },
     "restaurant": {
       "name": "가매일식",
       "category": ["일식", "정식"],
@@ -69,7 +69,7 @@
   },
   {
     "id": "opetitvert-park-junwoo",
-    "chef": { "name": "박준우", "season": 1, "team": "white" },
+    "chef": { "name": "박준우", "season": 1, "team": "white", "isTop7": true },
     "restaurant": {
       "name": "카페 오쁘띠베르",
       "category": ["카페", "디저트"],
@@ -86,7 +86,7 @@
   },
   {
     "id": "evett-joseph-lidgerwood",
-    "chef": { "name": "조셉 리저우드", "season": 1, "team": "white" },
+    "chef": { "name": "조셉 리저우드", "season": 1, "team": "white", "isTop7": true },
     "restaurant": {
       "name": "에빗",
       "category": ["양식", "파인다이닝"],
@@ -103,7 +103,7 @@
   },
   {
     "id": "chinmil-jeju-oh-seduk",
-    "chef": { "name": "오세득", "season": 1, "team": "white" },
+    "chef": { "name": "오세득", "season": 1, "team": "white", "isTop7": true },
     "restaurant": {
       "name": "친밀 제주",
       "category": ["양식", "버거"],
@@ -120,7 +120,7 @@
   },
   {
     "id": "fabri-kitchen-fabri",
-    "chef": { "name": "파브리", "season": 1, "team": "white" },
+    "chef": { "name": "파브리", "season": 1, "team": "white", "isTop7": false },
     "restaurant": {
       "name": "파브리키친",
       "category": ["이탈리안", "캐주얼"],
@@ -137,7 +137,7 @@
   },
   {
     "id": "morino-aruyo-kim-seungmin",
-    "chef": { "name": "김승민", "season": 1, "team": "white" },
+    "chef": { "name": "김승민", "season": 1, "team": "white", "isTop7": false },
     "restaurant": {
       "name": "모리노아루요",
       "category": ["일식", "덮밥"],
@@ -154,7 +154,7 @@
   },
   {
     "id": "bicena-bang-gisu",
-    "chef": { "name": "방기수", "season": 1, "team": "white" },
+    "chef": { "name": "방기수", "season": 1, "team": "white", "isTop7": false },
     "restaurant": {
       "name": "비채나",
       "category": ["한식", "파인다이닝", "호텔"],

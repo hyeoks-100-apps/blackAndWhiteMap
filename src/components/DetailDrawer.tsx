@@ -40,6 +40,7 @@ export function DetailDrawer({ restaurant, onClose }: DetailDrawerProps) {
           <h2>{info.name}</h2>
           <p className="muted">{chef.name}</p>
           <div className="badges">
+            {chef.isTop7 && <span className="badge primary">TOP7</span>}
             {chef.season && <span className="badge">시즌 {chef.season}</span>}
             <span className={`badge team ${chef.team}`}>팀 {chef.team}</span>
           </div>

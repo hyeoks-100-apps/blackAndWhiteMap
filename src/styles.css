@@ -180,6 +180,11 @@ select {
   color: #0f172a;
 }
 
+.badge.primary {
+  background: #f97316;
+  color: #ffffff;
+}
+
 .badge.muted {
   background: #f1f5f9;
   color: #475569;

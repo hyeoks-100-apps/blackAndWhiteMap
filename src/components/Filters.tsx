@@ -74,6 +74,15 @@ export function FiltersPanel({ filters, seasons, onChange }: FiltersProps) {
         />
         네이버 예약 가능만
       </label>
+
+      <label className="checkbox">
+        <input
+          type="checkbox"
+          checked={filters.onlyTop7}
+          onChange={(e) => handleInput('onlyTop7', e.target.checked)}
+        />
+        탑 7 셰프만 보기
+      </label>
     </div>
   );
 }

@@ -13,6 +13,7 @@ const defaultFilters: Filters = {
   season: 'all',
   team: 'all',
   onlyBooking: false,
+  onlyTop7: false,
 };
 
 function getSeasons(restaurants: Restaurant[]): number[] {
