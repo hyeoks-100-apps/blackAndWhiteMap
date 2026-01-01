@@ -45,11 +45,11 @@ const MapEffects = ({ restaurants, selectedId }: { restaurants: Restaurant[]; se
 };
 
 export function MapView({ restaurants, selectedId, onSelect }: MapViewProps) {
-  const center = useMemo(() => {
+  const center = useMemo<[number, number]>(() => {
     if (!restaurants.length) return [37.5665, 126.978];
     const avgLat = restaurants.reduce((sum, cur) => sum + cur.restaurant.lat, 0) / restaurants.length;
     const avgLng = restaurants.reduce((sum, cur) => sum + cur.restaurant.lng, 0) / restaurants.length;
-    return [avgLat, avgLng] as [number, number];
+    return [avgLat, avgLng];
   }, [restaurants]);
 
   return (
