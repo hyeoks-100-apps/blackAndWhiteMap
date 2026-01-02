@@ -1000,5 +1000,151 @@
     },
     "tags": ["이탈리안", "예약가능", "디너"],
     "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "buyeo-nagyeong-mushroom-farm",
+    "chef": { "name": "이영숙", "season": 1, "team": "white", "isTop7": false },
+    "restaurant": {
+      "name": "나경버섯농가",
+      "category": ["한식", "버섯요리"],
+      "address": "충청남도 부여군 석성면 비당로109번길 100",
+      "lat": 36.263,
+      "lng": 126.936,
+      "naverPlaceUrl": "https://map.naver.com/v5/search/%EB%82%98%EA%B2%BD%EB%B2%84%EC%84%AF%EB%86%8D%EA%B0%80"
+    },
+    "tags": ["런치", "로컬맛집"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "seoul-yongsan-gunmong",
+    "chef": { "name": "데이비드 리", "season": 1, "team": "black", "isTop7": false },
+    "restaurant": {
+      "name": "군몽",
+      "category": ["양식", "스테이크"],
+      "address": "서울특별시 용산구 한강대로27가길 15",
+      "lat": 37.536,
+      "lng": 127,
+      "naverPlaceUrl": "https://map.naver.com/v5/search/%EA%B5%B0%EB%AA%BD"
+    },
+    "tags": ["디너", "예약가능", "스테이크"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "seoul-seongdong-mamalee-market",
+    "chef": { "name": "송하슬람", "season": 1, "team": "black", "isTop7": false },
+    "restaurant": {
+      "name": "마마리마켓",
+      "category": ["한식", "반찬"],
+      "address": "서울특별시 성동구 연무장18길 16",
+      "lat": 37.5445,
+      "lng": 127.055,
+      "naverPlaceUrl": "https://map.naver.com/v5/search/%EB%A7%88%EB%A7%88%EB%A6%AC%EB%A7%88%EC%BC%93",
+      "instagram": "https://www.instagram.com/mamaleemarket/"
+    },
+    "tags": ["포장", "캐주얼", "런치"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "suwon-yeongtong-todays-sushi",
+    "chef": { "name": "이경재", "season": 1, "team": "black", "isTop7": false },
+    "restaurant": {
+      "name": "오늘의초밥",
+      "category": ["일식", "스시"],
+      "address": "경기도 수원시 영통구 센트럴파크로127번길 18 1층",
+      "lat": 37.288,
+      "lng": 127.062,
+      "naverPlaceUrl": "https://map.naver.com/v5/search/%EC%98%A4%EB%8A%98%EC%9D%98%EC%B4%88%EB%B0%A5",
+      "phone": "031-212-9466"
+    },
+    "tags": ["런치", "스시", "가성비"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "seoul-jongno-sushi-nonde",
+    "chef": { "name": "우현일", "season": 1, "team": "black", "isTop7": false },
+    "restaurant": {
+      "name": "스시 논데",
+      "category": ["일식", "오마카세"],
+      "address": "서울특별시 종로구 종로18길 37 하이뷰디아트 2층",
+      "lat": 37.57,
+      "lng": 126.99,
+      "naverPlaceUrl": "https://map.naver.com/v5/search/%EC%8A%A4%EC%8B%9C%20%EB%85%BC%EB%8D%B0",
+      "phone": "02-6082-2081"
+    },
+    "tags": ["디너", "오마카세", "예약필수"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "seoul-eunpyeong-saige",
+    "chef": { "name": "박세진", "season": 1, "team": "black", "isTop7": false },
+    "restaurant": {
+      "name": "심야식당 세이지",
+      "category": ["일식", "이자카야"],
+      "address": "서울특별시 은평구 연서로27길 13-6",
+      "lat": 37.618,
+      "lng": 126.922,
+      "naverPlaceUrl": "https://map.naver.com/v5/search/%EC%8B%AC%EC%95%BC%EC%8B%9D%EB%8B%B9%20%EC%84%B8%EC%9D%B4%EC%A7%80"
+    },
+    "tags": ["디너", "이자카야", "예약가능"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "seoul-junggu-the-siot",
+    "chef": { "name": "김원기", "season": 1, "team": "black", "isTop7": false },
+    "restaurant": {
+      "name": "더 시옷",
+      "category": ["양식", "스테이크"],
+      "address": "서울특별시 중구 수표로 30 2층",
+      "lat": 37.5665,
+      "lng": 126.991,
+      "naverPlaceUrl": "https://map.naver.com/v5/search/%EB%8D%94%20%EC%8B%9C%EC%98%B7",
+      "instagram": "https://www.instagram.com/eulji_thesiot/"
+    },
+    "tags": ["디너", "예약가능", "스테이크"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "seoul-gangnam-sav-seoul",
+    "chef": { "name": "장한이", "season": 1, "team": "black", "isTop7": false },
+    "restaurant": {
+      "name": "사브서울",
+      "category": ["다이닝", "와인바"],
+      "address": "서울특별시 강남구 논현로175길 6 지하1층",
+      "lat": 37.515,
+      "lng": 127.032,
+      "naverPlaceUrl": "https://map.naver.com/v5/search/%EC%82%AC%EB%B8%8C%EC%84%9C%EC%9A%B8",
+      "instagram": "https://www.instagram.com/sav.seoul/"
+    },
+    "tags": ["디너", "와인페어링", "예약가능"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "seoul-seocho-wildflower",
+    "chef": { "name": "조은빛", "season": 1, "team": "black", "isTop7": false },
+    "restaurant": {
+      "name": "와일드플라워",
+      "category": ["양식", "화덕요리"],
+      "address": "서울특별시 서초구 방배로26길 19 1층",
+      "lat": 37.481,
+      "lng": 126.9975,
+      "naverPlaceUrl": "https://map.naver.com/v5/search/%EC%99%80%EC%9D%BC%EB%93%9C%ED%94%8C%EB%9D%BC%EC%9B%8C"
+    },
+    "tags": ["디너", "화덕", "기념일"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "seoul-mapo-aoitori",
+    "chef": { "name": "코바야시 스스무", "season": 1, "team": "black", "isTop7": false },
+    "restaurant": {
+      "name": "아오이토리",
+      "category": ["베이커리", "카페"],
+      "address": "서울특별시 마포구 와우산로29길 8 K.C빌딩",
+      "lat": 37.5535,
+      "lng": 126.923,
+      "naverPlaceUrl": "https://map.naver.com/v5/search/%EC%95%84%EC%98%A4%EC%9D%B4%ED%86%A0%EB%A6%AC",
+      "instagram": "https://www.instagram.com/bakerycafeaoitori/"
+    },
+    "tags": ["베이커리", "테이크아웃", "카페"],
+    "updatedAt": "2026-01-02"
   }
 ]
