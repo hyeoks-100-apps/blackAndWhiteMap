@@ -9,25 +9,32 @@ interface DetailDrawerProps {
 const buildGoogleMapsLink = (lat: number, lng: number) =>
   `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
 
+const buildShareUrl = (id: string) => {
+  if (typeof window === 'undefined') return '';
+  const url = new URL(window.location.href);
+  url.hash = `#/${encodeURIComponent(id)}`;
+  return url.toString();
+};
+
 export function DetailDrawer({ restaurant, onClose }: DetailDrawerProps) {
-  const [copied, setCopied] = useState(false);
+  const [copied, setCopied] = useState<'address' | 'link' | null>(null);
 
   useEffect(() => {
-    if (copied) {
-      const timer = setTimeout(() => setCopied(false), 1200);
-      return () => clearTimeout(timer);
-    }
+    if (!copied) return;
+    const timer = setTimeout(() => setCopied(null), 1200);
+    return () => clearTimeout(timer);
   }, [copied]);
 
   if (!restaurant) return null;
 
   const { chef, restaurant: info, tags, updatedAt } = restaurant;
+  const shareUrl = buildShareUrl(restaurant.id);
 
-  const handleCopy = async () => {
+  const handleCopy = async (text: string, type: 'address' | 'link') => {
     if (!navigator?.clipboard) return;
     try {
-      await navigator.clipboard.writeText(info.address);
-      setCopied(true);
+      await navigator.clipboard.writeText(text);
+      setCopied(type);
     } catch (error) {
       console.error(error);
     }
@@ -56,8 +63,8 @@ export function DetailDrawer({ restaurant, onClose }: DetailDrawerProps) {
           <div className="info-value">
             <span>{info.address}</span>
             {navigator?.clipboard && (
-              <button className="pill" onClick={handleCopy} aria-live="polite">
-                {copied ? '복사됨' : '복사'}
+              <button className="pill" onClick={() => handleCopy(info.address, 'address')} aria-live="polite">
+                {copied === 'address' ? '복사됨' : '복사'}
               </button>
             )}
           </div>
@@ -116,6 +123,11 @@ export function DetailDrawer({ restaurant, onClose }: DetailDrawerProps) {
           <a className="button" href={info.naverPlaceUrl} target="_blank" rel="noreferrer noopener">
             네이버 플레이스
           </a>
+        )}
+        {navigator?.clipboard && (
+          <button className="button" type="button" onClick={() => handleCopy(shareUrl, 'link')}>
+            링크 복사
+          </button>
         )}
         <a className="button" href={buildGoogleMapsLink(info.lat, info.lng)} target="_blank" rel="noreferrer noopener">
           길찾기 (Google)
