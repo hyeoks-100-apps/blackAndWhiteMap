@@ -1,163 +1,211 @@
 [
   {
-    "id": "choidot-gangnam",
-    "chef": { "name": "최현석", "season": 1, "team": "white", "isTop7": true },
-    "restaurant": {
-      "name": "쵸이닷",
-      "category": ["이탈리아", "다이닝"],
-      "address": "서울특별시 강남구 도산대로 457 3층",
-      "lat": 37.5232,
-      "lng": 127.0433,
-      "naverPlaceUrl": "https://m.place.naver.com/restaurant/280965665/home",
-      "naverBookingUrl": "https://app.catchtable.co.kr/ct/shop/choidot?from=share&type=VISIT_RESERVATION",
-      "phone": "02-518-0318"
+    "id": "jeong-jisun-tianmimi-gangnam",
+    "chef": {
+      "name": "정지선",
+      "season": 1,
+      "team": "white",
+      "isTop7": true
     },
-    "tags": ["디너", "예약가능", "코스"],
-    "updatedAt": "2026-01-01"
-  },
-  {
-    "id": "yunseoul-gangnam",
-    "chef": { "name": "김도윤", "season": 1, "team": "white", "isTop7": false },
     "restaurant": {
-      "name": "윤서울",
-      "category": ["한식", "파인다이닝"],
-      "address": "서울특별시 강남구 선릉로 805 1층",
-      "lat": 37.5246,
-      "lng": 127.0414,
-      "naverPlaceUrl": "https://m.place.naver.com/restaurant/1698341503/home",
+      "name": "티엔미미 강남점",
+      "category": ["중식", "딤섬"],
+      "address": "서울특별시 서초구 사임당로 143",
+      "lat": 37.4949,
+      "lng": 127.0287,
+      "naverPlaceUrl": "https://map.naver.com/v5/search/%ED%8B%B0%EC%97%94%EB%AF%B8%EB%AF%B8%20%EA%B0%95%EB%82%A8%EC%A0%90",
       "naverBookingUrl": "",
-      "instagram": "https://www.instagram.com/yunseoul.restaurant"
+      "phone": "0507-1476-1686",
+      "instagram": "https://instagram.com/tianmimi_gangnam"
     },
-    "tags": ["미쉐린", "예약가능", "디너"],
+    "tags": ["런치", "예약가능", "딤섬"],
     "updatedAt": "2026-01-01"
   },
   {
-    "id": "hongbogak-novotel-gangnam",
-    "chef": { "name": "여경래", "season": 1, "team": "white", "isTop7": false },
+    "id": "choi-jihyung-leebukbang",
+    "chef": {
+      "name": "최지형",
+      "season": 1,
+      "team": "white",
+      "isTop7": false
+    },
     "restaurant": {
-      "name": "홍보각",
-      "category": ["중식", "호텔레스토랑"],
-      "address": "서울특별시 강남구 봉은사로 130 노보텔 앰배서더 서울 강남 LL층",
-      "lat": 37.5052,
-      "lng": 127.0313,
-      "naverPlaceUrl": "",
+      "name": "리북방",
+      "category": ["한식", "코스"],
+      "address": "서울특별시 마포구 마포대로1길 16",
+      "lat": 37.5427,
+      "lng": 126.952,
+      "naverPlaceUrl": "https://map.naver.com/v5/search/%EB%A6%AC%EB%B6%81%EB%B0%A9",
       "naverBookingUrl": "",
-      "phone": "02-531-6479"
+      "instagram": "https://instagram.com/leebukbang"
     },
-    "tags": ["호텔중식", "예약가능", "런치"],
+    "tags": ["예약필수", "오마카세", "미쉐린"],
     "updatedAt": "2026-01-01"
   },
   {
-    "id": "gamail-sangmu-gwangju",
-    "chef": { "name": "안유성", "season": 1, "team": "white", "isTop7": false },
+    "id": "jang-hojun-negi-sukiyaki",
+    "chef": {
+      "name": "장호준",
+      "season": 1,
+      "team": "white",
+      "isTop7": true
+    },
     "restaurant": {
-      "name": "가매일식",
-      "category": ["일식", "일식당"],
-      "address": "광주광역시 서구 상무대로 1104-26",
-      "lat": 35.1536,
-      "lng": 126.8802,
-      "naverPlaceUrl": "https://m.place.naver.com/restaurant/13570506/home",
+      "name": "네기 스키야키",
+      "category": ["일식", "스키야키"],
+      "address": "서울특별시 강남구 논현로 854 지하1층",
+      "lat": 37.5259,
+      "lng": 127.0298,
+      "naverPlaceUrl": "https://map.naver.com/p/entry/place/1705860023?placePath=/home&c=15.00,0,0,0,dh",
+      "naverBookingUrl": ""
+    },
+    "tags": ["디너", "예약필수", "스키야키"],
+    "updatedAt": "2026-01-01"
+  },
+  {
+    "id": "jo-eunju-touch-the-sky",
+    "chef": {
+      "name": "조은주",
+      "season": 1,
+      "team": "white",
+      "isTop7": false
+    },
+    "restaurant": {
+      "name": "터치더스카이",
+      "category": ["프렌치", "파인다이닝"],
+      "address": "서울특별시 영등포구 63로 50 한화생명빌딩 58F",
+      "lat": 37.519,
+      "lng": 126.9404,
+      "naverPlaceUrl": "https://map.naver.com/v5/search/%ED%84%B0%EC%B9%98%EB%8D%94%EC%8A%A4%EC%B9%B4%EC%9D%B4",
+      "naverBookingUrl": "https://booking.naver.com/booking/6/bizes/158679",
+      "phone": "02-789-5761"
+    },
+    "tags": ["뷰맛집", "예약가능", "디너"],
+    "updatedAt": "2026-01-01"
+  },
+  {
+    "id": "hwang-jinsun-jinjin",
+    "chef": {
+      "name": "황진선",
+      "season": 1,
+      "team": "white",
+      "isTop7": false
+    },
+    "restaurant": {
+      "name": "진진",
+      "category": ["중식", "다이닝"],
+      "address": "서울특별시 마포구 월드컵북로1길 14",
+      "lat": 37.5557,
+      "lng": 126.924,
+      "naverPlaceUrl": "https://map.naver.com/v5/search/%EC%A7%84%EC%A7%84%20%EB%A7%88%ED%8F%AC",
       "naverBookingUrl": "",
-      "phone": "062-352-7711"
+      "phone": "070-5035-8878"
     },
-    "tags": ["백년가게", "광주", "단체가능"],
+    "tags": ["예약가능", "중식", "미쉐린"],
     "updatedAt": "2026-01-01"
   },
   {
-    "id": "cafe-opetitvert-seochon",
-    "chef": { "name": "박준우", "season": 1, "team": "white", "isTop7": false },
+    "id": "kwon-seongjun-via-toledo",
+    "chef": {
+      "name": "권성준",
+      "season": 1,
+      "team": "black",
+      "isTop7": true
+    },
     "restaurant": {
-      "name": "카페 오쁘띠베르",
-      "category": ["카페", "디저트"],
-      "address": "서울특별시 종로구 자하문로 47-1 1층",
-      "lat": 37.5781,
-      "lng": 126.9709,
-      "naverPlaceUrl": "https://m.place.naver.com/restaurant/1445845015/home",
+      "name": "비아 톨레도 파스타바",
+      "category": ["이탈리안", "파스타바"],
+      "address": "서울특별시 용산구 원효로83길 7-2",
+      "lat": 37.5365,
+      "lng": 126.9628,
+      "naverPlaceUrl": "https://map.naver.com/v5/search/%EB%B9%84%EC%95%84%20%ED%86%A8%EB%A0%88%EB%8F%84%20%ED%8C%8C%EC%8A%A4%ED%83%80%EB%B0%94",
+      "naverBookingUrl": ""
+    },
+    "tags": ["예약제", "코스", "와인"],
+    "updatedAt": "2026-01-01"
+  },
+  {
+    "id": "jo-seohyeong-euljiro-boseok",
+    "chef": {
+      "name": "조서형",
+      "season": 1,
+      "team": "black",
+      "isTop7": false
+    },
+    "restaurant": {
+      "name": "을지로 보석",
+      "category": ["한식", "다이닝바"],
+      "address": "서울특별시 중구 마른내로 11-10",
+      "lat": 37.566,
+      "lng": 126.9915,
+      "naverPlaceUrl": "https://map.naver.com/v5/search/%EC%9D%84%EC%A7%80%EB%A1%9C%EB%B3%B4%EC%84%9D",
       "naverBookingUrl": "",
-      "phone": "02-735-7569"
+      "phone": "02-6390-7070",
+      "instagram": "https://instagram.com/euljiro_boseok"
     },
-    "tags": ["디저트", "포장가능", "반려동물동반"],
+    "tags": ["예약필수", "디너", "주류필수"],
     "updatedAt": "2026-01-01"
   },
   {
-    "id": "evett-dosan-gangnam",
-    "chef": { "name": "조셉 리저우드", "season": 1, "team": "white", "isTop7": false },
+    "id": "yoon-namno-deepin-oksu",
+    "chef": {
+      "name": "윤남노",
+      "season": 1,
+      "team": "black",
+      "isTop7": true
+    },
     "restaurant": {
-      "name": "에빗",
-      "category": ["양식", "파인다이닝"],
-      "address": "서울특별시 강남구 도산대로45길 10-5 1층 EVETT",
-      "lat": 37.5237,
-      "lng": 127.0385,
-      "naverPlaceUrl": "https://m.place.naver.com/restaurant/1838135293/home",
+      "name": "디핀 옥수",
+      "category": ["이탈리안", "와인바"],
+      "address": "서울특별시 성동구 독서당로 194 지하1층",
+      "lat": 37.5397,
+      "lng": 127.0156,
+      "naverPlaceUrl": "https://map.naver.com/v5/search/%EB%94%94%ED%95%80%EC%98%A5%EC%88%98",
       "naverBookingUrl": "",
-      "phone": "0507-1399-1029"
+      "instagram": "https://www.instagram.com/deepin_oksu/"
     },
-    "tags": ["미쉐린", "예약가능", "디너"],
+    "tags": ["런치", "디너", "와인"],
     "updatedAt": "2026-01-01"
   },
   {
-    "id": "chinnmil-jeju-jocheon",
-    "chef": { "name": "오세득", "season": 1, "team": "white", "isTop7": false },
-    "restaurant": {
-      "name": "친밀 제주",
-      "category": ["양식", "다이닝"],
-      "address": "제주특별자치도 제주시 조천읍 남조로 1781",
-      "lat": 33.4317,
-      "lng": 126.6645,
-      "naverPlaceUrl": "https://m.place.naver.com/restaurant/1680427154/home",
-      "naverBookingUrl": "https://app.catchtable.co.kr/ct/shop/chinnmeal_jeju",
-      "phone": "0507-1394-0387"
+    "id": "kang-seungwon-treed",
+    "chef": {
+      "name": "강승원",
+      "season": 1,
+      "team": "black",
+      "isTop7": true
     },
-    "tags": ["제주", "예약가능", "디너"],
+    "restaurant": {
+      "name": "트리드",
+      "category": ["파인다이닝", "코스"],
+      "address": "서울특별시 강남구 선릉로162길 16 2층",
+      "lat": 37.5253,
+      "lng": 127.0409,
+      "naverPlaceUrl": "https://map.naver.com/v5/search/%ED%8A%B8%EB%A6%AC%EB%93%9C",
+      "naverBookingUrl": ""
+    },
+    "tags": ["코스", "예약필수", "파인다이닝"],
     "updatedAt": "2026-01-01"
   },
   {
-    "id": "fabri-kitchen-yongsan",
-    "chef": { "name": "파브리", "season": 1, "team": "white", "isTop7": false },
-    "restaurant": {
-      "name": "파브리키친",
-      "category": ["이탈리아", "다이닝"],
-      "address": "서울특별시 용산구 한강대로15길 23-6 1층",
-      "lat": 37.5296,
-      "lng": 126.9646,
-      "naverPlaceUrl": "https://m.place.naver.com/restaurant/1775308300/home",
-      "naverBookingUrl": "https://app.catchtable.co.kr/ct/shop/FabriKitchenYongsan",
-      "phone": "070-7576-4830"
+    "id": "oh-juntak-namyeongtak",
+    "chef": {
+      "name": "오준탁",
+      "season": 1,
+      "team": "black",
+      "isTop7": false
     },
-    "tags": ["예약가능", "점심", "이탈리안"],
-    "updatedAt": "2026-01-01"
-  },
-  {
-    "id": "morino-aruyo-aewol-jeju",
-    "chef": { "name": "김승민", "season": 1, "team": "white", "isTop7": false },
     "restaurant": {
-      "name": "모리노아루요",
-      "category": ["일식", "일식당"],
-      "address": "제주특별자치도 제주시 애월읍 하소로 769-58 모리노아루요",
-      "lat": 33.4102,
-      "lng": 126.3294,
-      "naverPlaceUrl": "https://m.place.naver.com/restaurant/37275351/home",
+      "name": "남영탉",
+      "category": ["치킨", "주점"],
+      "address": "서울특별시 용산구 한강대로10길 21",
+      "lat": 37.5418,
+      "lng": 126.9728,
+      "naverPlaceUrl": "https://map.naver.com/v5/search/%EB%82%A8%EC%98%81%ED%83%89",
       "naverBookingUrl": "",
-      "phone": "0507-1377-4253",
-      "instagram": "https://www.instagram.com/morino_aruyo"
+      "phone": "070-8733-5949"
     },
-    "tags": ["제주", "런치", "주차가능"],
-    "updatedAt": "2026-01-01"
-  },
-  {
-    "id": "bicena-lotteworldtower",
-    "chef": { "name": "방기수", "season": 1, "team": "white", "isTop7": false },
-    "restaurant": {
-      "name": "비채나",
-      "category": ["한식", "파인다이닝"],
-      "address": "서울특별시 송파구 올림픽로 300 롯데월드타워 81층",
-      "lat": 37.5131,
-      "lng": 127.1026,
-      "naverPlaceUrl": "https://m.place.naver.com/restaurant/31076200/home",
-      "naverBookingUrl": "",
-      "phone": "02-3213-1261"
-    },
-    "tags": ["미쉐린", "예약가능", "고층뷰"],
+    "tags": ["저녁", "주점", "치킨"],
     "updatedAt": "2026-01-01"
   }
 ]
