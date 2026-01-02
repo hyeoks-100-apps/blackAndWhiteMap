@@ -842,5 +842,163 @@
     },
     "tags": ["런치", "디너", "예약가능"],
     "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "keebo-edamame-yongsan",
+    "chef": { "name": "현상욱", "season": 1, "team": "black", "isTop7": false },
+    "restaurant": {
+      "name": "키보 에다마메",
+      "category": ["일식", "이자카야"],
+      "address": "서울특별시 용산구 한강대로76길 11-40 1층",
+      "lat": 37.5416,
+      "lng": 126.9727,
+      "naverPlaceUrl": "https://map.naver.com/v5/search/%ED%82%A4%EB%B3%B4%20%EC%97%90%EB%8B%A4%EB%A7%88%EB%A9%94",
+      "naverBookingUrl": "",
+      "instagram": "https://instagram.com/keebo.edamame"
+    },
+    "tags": ["이자카야", "예약가능", "디너"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "bornyeon-seongsu",
+    "chef": { "name": "배경준", "season": 1, "team": "black", "isTop7": false },
+    "restaurant": {
+      "name": "본연",
+      "category": ["한식", "파인다이닝"],
+      "address": "서울특별시 성동구 연무장길 80 2층",
+      "lat": 37.5447,
+      "lng": 127.0555,
+      "naverPlaceUrl": "https://map.naver.com/v5/search/%EB%B3%B8%EC%97%B0%20%EC%84%B1%EC%88%98",
+      "naverBookingUrl": ""
+    },
+    "tags": ["코스", "예약가능", "디너"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "doryang-yongsan",
+    "chef": { "name": "임태훈", "season": 1, "team": "black", "isTop7": false },
+    "restaurant": {
+      "name": "도량",
+      "category": ["중식", "다이닝"],
+      "address": "서울특별시 용산구 대사관로31길 25-1",
+      "lat": 37.5354,
+      "lng": 127.0007,
+      "naverPlaceUrl": "https://map.naver.com/v5/search/%EB%8F%84%EB%9F%89%20%EC%9A%A9%EC%82%B0",
+      "naverBookingUrl": ""
+    },
+    "tags": ["중식", "예약가능", "디너"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "jogwang-101-jongno",
+    "chef": { "name": "조광효", "season": 1, "team": "black", "isTop7": false },
+    "restaurant": {
+      "name": "조광101",
+      "category": ["다이닝", "퓨전"],
+      "address": "서울특별시 종로구 사직로14길 34-3",
+      "lat": 37.576,
+      "lng": 126.969,
+      "naverPlaceUrl": "https://map.naver.com/v5/search/%EC%A1%B0%EA%B4%91101",
+      "naverBookingUrl": ""
+    },
+    "tags": ["예약가능", "디너", "캐주얼"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "jogwang-201-itaewon",
+    "chef": { "name": "조광효", "season": 1, "team": "black", "isTop7": false },
+    "restaurant": {
+      "name": "조광201",
+      "category": ["다이닝", "퓨전"],
+      "address": "서울특별시 용산구 이태원로16길 5 1층",
+      "lat": 37.5349,
+      "lng": 126.9939,
+      "naverPlaceUrl": "https://map.naver.com/v5/search/%EC%A1%B0%EA%B4%91201",
+      "naverBookingUrl": ""
+    },
+    "tags": ["예약가능", "디너", "캐주얼"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "buto-hannam",
+    "chef": { "name": "임희원", "season": 1, "team": "black", "isTop7": false },
+    "restaurant": {
+      "name": "부토",
+      "category": ["다이닝", "바"],
+      "address": "서울특별시 용산구 한남대로27가길 32 B2",
+      "lat": 37.5342,
+      "lng": 127.0009,
+      "naverPlaceUrl": "https://map.naver.com/v5/search/%EB%B6%80%ED%86%A0%20%ED%95%9C%EB%82%A8",
+      "naverBookingUrl": "",
+      "instagram": "https://instagram.com/buto_hannam"
+    },
+    "tags": ["바", "예약가능", "디너"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "yakitorimook-yeonnam",
+    "chef": { "name": "김병묵", "season": 1, "team": "black", "isTop7": false },
+    "restaurant": {
+      "name": "야키토리묵",
+      "category": ["일식", "야키토리"],
+      "address": "서울특별시 마포구 성미산로 165-1",
+      "lat": 37.5617,
+      "lng": 126.925,
+      "naverPlaceUrl": "https://map.naver.com/v5/search/%EC%95%BC%ED%82%A4%ED%86%A0%EB%A6%AC%EB%AC%B5%20%EC%97%B0%EB%82%A8",
+      "naverBookingUrl": "",
+      "instagram": "https://instagram.com/yakitorimook"
+    },
+    "tags": ["야키토리", "사케", "예약가능"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "yakitorimook-sinsa",
+    "chef": { "name": "김병묵", "season": 1, "team": "black", "isTop7": false },
+    "restaurant": {
+      "name": "야키토리묵 신사",
+      "category": ["일식", "야키토리"],
+      "address": "서울특별시 강남구 강남대로152길 23 지하1층",
+      "lat": 37.5173,
+      "lng": 127.0201,
+      "naverPlaceUrl": "https://map.naver.com/v5/search/%EC%95%BC%ED%82%A4%ED%86%A0%EB%A6%AC%EB%AC%B5%20%EC%8B%A0%EC%82%AC",
+      "naverBookingUrl": "",
+      "phone": "0507-1446-3433",
+      "instagram": "https://instagram.com/yakitorimook"
+    },
+    "tags": ["야키토리", "사케", "예약가능"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "nawoo-namyoung",
+    "chef": { "name": "박지영", "season": 1, "team": "black", "isTop7": false },
+    "restaurant": {
+      "name": "나우 남영",
+      "category": ["와인바", "다이닝"],
+      "address": "서울특별시 용산구 원효로89길 23 2층",
+      "lat": 37.5399,
+      "lng": 126.972,
+      "naverPlaceUrl": "https://map.naver.com/v5/search/%EB%82%98%EC%9A%B0%20%EB%82%A8%EC%98%81",
+      "naverBookingUrl": "",
+      "phone": "02-6369-8923",
+      "instagram": "https://instagram.com/nawoo_more.better"
+    },
+    "tags": ["와인바", "예약가능", "디너"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "pono-buono-dosan",
+    "chef": { "name": "김태성", "season": 1, "team": "black", "isTop7": false },
+    "restaurant": {
+      "name": "포노 부오노",
+      "category": ["이탈리안", "다이닝"],
+      "address": "서울특별시 강남구 도산대로45길 8-7 2층",
+      "lat": 37.5237,
+      "lng": 127.036,
+      "naverPlaceUrl": "https://map.naver.com/v5/search/%ED%8F%AC%EB%85%B8%20%EB%B6%80%EC%98%A4%EB%85%B8",
+      "naverBookingUrl": "",
+      "instagram": "https://instagram.com/pono_buono"
+    },
+    "tags": ["이탈리안", "예약가능", "디너"],
+    "updatedAt": "2026-01-02"
   }
 ]
