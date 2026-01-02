@@ -1146,5 +1146,166 @@
     },
     "tags": ["베이커리", "테이크아웃", "카페"],
     "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "seoul-gangnam-blgre",
+    "chef": { "name": "봉주부", "season": 1, "team": "black", "isTop7": false },
+    "restaurant": {
+      "name": "블그레",
+      "category": ["바", "다이닝"],
+      "address": "서울특별시 강남구 논현로175길 101-4",
+      "lat": 37.523,
+      "lng": 127.027,
+      "naverPlaceUrl": "https://map.naver.com/p/entry/place/1804965360?c=15.00%2C0%2C0%2C0%2Cdh&placePath=%2Fhome",
+      "naverBookingUrl": "",
+      "instagram": "https://www.instagram.com/lounge_by_blgre/"
+    },
+    "tags": ["바", "디너", "예약가능"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "seoul-euljiro-chuanchuanjiubar",
+    "chef": { "name": "빙그레", "season": 1, "team": "black", "isTop7": false },
+    "restaurant": {
+      "name": "촨촨지우바",
+      "category": ["중식", "훠궈"],
+      "address": "서울특별시 중구 을지로 157 대림상가 3층 가358,359",
+      "lat": 37.5664,
+      "lng": 127.0032,
+      "naverPlaceUrl": "https://map.naver.com/p/entry/place/1102909614?c=15.00%2C0%2C0%2C0%2Cdh&placePath=%2Fhome",
+      "naverBookingUrl": "",
+      "phone": "0507-1432-9038"
+    },
+    "tags": ["훠궈", "꼬치", "디너"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "seoul-hannam-logi",
+    "chef": { "name": "시크릿 코스", "season": 1, "team": "black", "isTop7": false },
+    "restaurant": {
+      "name": "로기",
+      "category": ["다이닝", "와인바"],
+      "address": "서울특별시 용산구 한남대로27가길 32 201호",
+      "lat": 37.5353,
+      "lng": 127.0069,
+      "naverPlaceUrl": "https://map.naver.com/p/entry/place/1271542132?c=15.00%2C0%2C0%2C0%2Cdh&placePath=%2Fhome",
+      "naverBookingUrl": "",
+      "phone": "0507-1333-4895"
+    },
+    "tags": ["디너", "와인", "예약가능"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "seoul-itaewon-jackjack",
+    "chef": { "name": "짹짹이", "season": 1, "team": "black", "isTop7": false },
+    "restaurant": {
+      "name": "잭잭 이태원점",
+      "category": ["양식", "버거"],
+      "address": "서울특별시 용산구 회나무로6길 21 1층",
+      "lat": 37.5342,
+      "lng": 126.9895,
+      "naverPlaceUrl": "https://map.naver.com/p/entry/place/1747946790?c=15.00%2C0%2C0%2C0%2Cdh&placePath=%2Fhome",
+      "naverBookingUrl": "",
+      "phone": "0507-1452-0717"
+    },
+    "tags": ["수제버거", "캐주얼", "포장가능"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "jeonju-bibimsori",
+    "chef": { "name": "비빔대왕", "season": 1, "team": "black", "isTop7": false },
+    "restaurant": {
+      "name": "비빔소리",
+      "category": ["한식", "비빔밥"],
+      "address": "전라북도 전주시 완산구 경기전길 126",
+      "lat": 35.8142,
+      "lng": 127.152,
+      "naverPlaceUrl": "https://map.naver.com/p/entry/place/37417837?c=15.00%2C0%2C0%2C0%2Cdh&placePath=%2Fhome",
+      "naverBookingUrl": "",
+      "phone": "063-253-2589"
+    },
+    "tags": ["점심", "로컬맛집", "전주"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "daegu-suseong-choisne-pizza",
+    "chef": { "name": "월클 레시피", "season": 1, "team": "black", "isTop7": false },
+    "restaurant": {
+      "name": "최씨네 피자",
+      "category": ["양식", "피자"],
+      "address": "대구광역시 수성구 달구벌대로467길 22-24",
+      "lat": 35.8587,
+      "lng": 128.6295,
+      "naverPlaceUrl": "https://map.naver.com/p/entry/place/1497559463?c=15.00%2C0%2C0%2C0%2Cdh&placePath=%2Fhome",
+      "naverBookingUrl": "",
+      "phone": "0508-8201-4594"
+    },
+    "tags": ["포장", "피자", "야식"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "gangneung-meatculture",
+    "chef": { "name": "청화대 셰프", "season": 1, "team": "black", "isTop7": false },
+    "restaurant": {
+      "name": "미트컬쳐",
+      "category": ["양식", "스테이크"],
+      "address": "강원특별자치도 강릉시 경강로 2629 1층",
+      "lat": 37.7738,
+      "lng": 128.9481,
+      "naverPlaceUrl": "https://map.naver.com/p/search/%EA%B0%95%EB%A6%89%20%EB%AF%B8%EB%93%9C%EC%BB%AC%EC%B3%90/place/1108028891?c=15.00%2C0%2C0%2C0%2Cdh&isCorrectAnswer=true",
+      "naverBookingUrl": "",
+      "phone": "0507-1318-5439"
+    },
+    "tags": ["스테이크", "디너", "강릉"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "seoul-oksu-jadeandwater",
+    "chef": { "name": "후포리 촌놈", "season": 1, "team": "black", "isTop7": false },
+    "restaurant": {
+      "name": "제이드앤워터",
+      "category": ["양식", "브런치"],
+      "address": "서울특별시 성동구 한림말3길 21-1",
+      "lat": 37.5436519,
+      "lng": 127.015331,
+      "naverPlaceUrl": "https://map.naver.com/p/entry/place/1012333241?c=15.00%2C0%2C0%2C0%2Cdh&entry=plt&lat=37.5436519&lng=127.015331&placePath=%2Fhome&searchType=place",
+      "naverBookingUrl": ""
+    },
+    "tags": ["브런치", "와인", "예약가능"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "jeju-gimnyeong-lastspring",
+    "chef": { "name": "B급 셰프", "season": 1, "team": "black", "isTop7": false },
+    "restaurant": {
+      "name": "넘은 봄",
+      "category": ["한식", "파인다이닝"],
+      "address": "제주특별자치도 제주시 구좌읍 김녕로1길 75-1",
+      "lat": 33.5573,
+      "lng": 126.7596,
+      "naverPlaceUrl": "https://map.naver.com/p/entry/place/1674851816?c=15.00%2C0%2C0%2C0%2Cdh&placePath=%2Fhome",
+      "naverBookingUrl": "",
+      "phone": "070-8028-8743",
+      "instagram": "https://www.instagram.com/lastspring_jeju/"
+    },
+    "tags": ["코스", "예약필수", "디너"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "seoul-samcheong-falbalas",
+    "chef": { "name": "돌아온 소년", "season": 1, "team": "black", "isTop7": false },
+    "restaurant": {
+      "name": "팔발라 삼청본점",
+      "category": ["양식", "브런치"],
+      "address": "서울특별시 종로구 삼청로 61",
+      "lat": 37.5817,
+      "lng": 126.9817,
+      "naverPlaceUrl": "",
+      "naverBookingUrl": "",
+      "phone": "0507-1361-8898",
+      "instagram": "https://www.instagram.com/falbalas1923/"
+    },
+    "tags": ["브런치", "데이트", "예약가능"],
+    "updatedAt": "2026-01-02"
   }
 ]
