@@ -683,5 +683,164 @@
     },
     "tags": ["호텔", "코스", "예약가능"],
     "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "s1-kwon-seongjun-via-toledo",
+    "chef": { "name": "권성준", "season": 1, "team": "black", "isTop7": true },
+    "restaurant": {
+      "name": "비아 톨레도 파스타바",
+      "category": ["이탈리안", "파스타바"],
+      "address": "서울특별시 용산구 원효로83길 7-2 1층",
+      "lat": 37.535,
+      "lng": 126.9622,
+      "naverPlaceUrl": "https://m.place.naver.com/search?query=%EB%B9%84%EC%95%84%20%ED%86%A8%EB%A0%88%EB%8F%84%20%ED%8C%8C%EC%8A%A4%ED%83%80%20%EB%B0%94",
+      "naverBookingUrl": ""
+    },
+    "tags": ["디너", "예약필수", "파스타"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "s1-kang-seungwon-trid",
+    "chef": { "name": "강승원", "season": 1, "team": "black", "isTop7": true },
+    "restaurant": {
+      "name": "트리드",
+      "category": ["파인다이닝", "컨템포러리"],
+      "address": "서울특별시 강남구 선릉로162길 16 2층",
+      "lat": 37.5255,
+      "lng": 127.0414,
+      "naverPlaceUrl": "https://m.place.naver.com/search?query=%ED%8A%B8%EB%A6%AC%EB%93%9C",
+      "naverBookingUrl": "",
+      "phone": "02-512-8312"
+    },
+    "tags": ["런치", "디너", "코스", "예약필수"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "s1-jung-jisun-tianmimi-gangnam",
+    "chef": { "name": "정지선", "season": 1, "team": "white", "isTop7": true },
+    "restaurant": {
+      "name": "티엔미미 강남점",
+      "category": ["중식", "딤섬"],
+      "address": "서울특별시 서초구 사임당로 143 Cross 143 104-1, 104-2, 104-3호",
+      "lat": 37.4945,
+      "lng": 127.0288,
+      "naverPlaceUrl": "https://naver.me/x2h9O4EP",
+      "naverBookingUrl": "",
+      "instagram": "https://www.instagram.com/tianmimi_gangnam/"
+    },
+    "tags": ["딤섬", "런치", "예약가능"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "s1-jang-hojoon-neghi-live",
+    "chef": { "name": "장호준", "season": 1, "team": "white", "isTop7": true },
+    "restaurant": {
+      "name": "네기라이브",
+      "category": ["일식", "다이닝"],
+      "address": "서울특별시 성동구 성수이로 97 5층",
+      "lat": 37.5461,
+      "lng": 127.0532,
+      "naverPlaceUrl": "https://m.place.naver.com/search?query=%EB%84%A4%EA%B8%B0%EB%9D%BC%EC%9D%B4%EB%B8%8C",
+      "naverBookingUrl": "",
+      "instagram": "https://www.instagram.com/janghojoon8/"
+    },
+    "tags": ["디너", "예약가능"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "s1-choi-hyunseok-choidot",
+    "chef": { "name": "최현석", "season": 1, "team": "white", "isTop7": false },
+    "restaurant": {
+      "name": "쵸이닷",
+      "category": ["파인다이닝", "컨템포러리"],
+      "address": "서울특별시 강남구 도산대로 457 3층",
+      "lat": 37.5238,
+      "lng": 127.0386,
+      "naverPlaceUrl": "https://m.place.naver.com/search?query=%EC%B5%B8%EC%9D%B4%EB%8B%B7",
+      "naverBookingUrl": "",
+      "instagram": "https://www.instagram.com/choidot_official/"
+    },
+    "tags": ["런치", "디너", "코스", "예약필수"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "s1-choi-kangrok-neo",
+    "chef": { "name": "최강록", "season": 1, "team": "white", "isTop7": false },
+    "restaurant": {
+      "name": "식당네오",
+      "category": ["일식", "다이닝"],
+      "address": "서울특별시 송파구 삼전로12길 4 1층 101호",
+      "lat": 37.503,
+      "lng": 127.0908,
+      "naverPlaceUrl": "https://naver.me/Frvrnj94",
+      "naverBookingUrl": "",
+      "instagram": "https://www.instagram.com/roi_choi/"
+    },
+    "tags": ["디너", "예약가능"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "s1-kim-doyun-yunseoul",
+    "chef": { "name": "김도윤", "season": 1, "team": "white", "isTop7": false },
+    "restaurant": {
+      "name": "윤서울",
+      "category": ["한식", "파인다이닝"],
+      "address": "서울특별시 강남구 선릉로 805 W빌딩 1층",
+      "lat": 37.5206,
+      "lng": 127.0415,
+      "naverPlaceUrl": "https://m.place.naver.com/search?query=%EC%9C%A4%EC%84%9C%EC%9A%B8",
+      "naverBookingUrl": "",
+      "instagram": "https://www.instagram.com/yunseoul.restaurant/"
+    },
+    "tags": ["런치", "디너", "코스", "예약필수"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "s1-joseph-lidgerwood-evett",
+    "chef": { "name": "조셉 리저우드", "season": 1, "team": "white", "isTop7": false },
+    "restaurant": {
+      "name": "에빗",
+      "category": ["파인다이닝", "컨템포러리"],
+      "address": "서울특별시 강남구 도산대로45길 10-5 1층",
+      "lat": 37.5235,
+      "lng": 127.036,
+      "naverPlaceUrl": "https://naver.me/F5bFaeQb",
+      "naverBookingUrl": "",
+      "instagram": "https://www.instagram.com/restaurantevett/"
+    },
+    "tags": ["디너", "코스", "예약필수"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "s1-park-junwoo-aux-petits-verres",
+    "chef": { "name": "박준우", "season": 1, "team": "white", "isTop7": false },
+    "restaurant": {
+      "name": "오쁘띠베르",
+      "category": ["프렌치", "와인바"],
+      "address": "서울특별시 종로구 자하문로 47-1",
+      "lat": 37.5786,
+      "lng": 126.9702,
+      "naverPlaceUrl": "https://m.place.naver.com/search?query=%EC%98%A4%EC%81%98%EB%9D%A0%EB%B2%A0%EB%A5%B4",
+      "naverBookingUrl": "",
+      "instagram": "https://www.instagram.com/auxpetitsverres/"
+    },
+    "tags": ["와인", "디너", "예약추천"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "s1-ahn-yuseong-gamae-ilsik",
+    "chef": { "name": "안유성", "season": 1, "team": "white", "isTop7": false },
+    "restaurant": {
+      "name": "가매일식",
+      "category": ["일식", "다이닝"],
+      "address": "광주광역시 서구 상무대로 1104-26",
+      "lat": 35.1547,
+      "lng": 126.8518,
+      "naverPlaceUrl": "https://m.place.naver.com/search?query=%EA%B0%80%EB%A7%A4%EC%9D%BC%EC%8B%9D",
+      "naverBookingUrl": "",
+      "instagram": "https://www.instagram.com/gamae_gwangjuok/"
+    },
+    "tags": ["런치", "디너", "예약가능"],
+    "updatedAt": "2026-01-02"
   }
 ]
