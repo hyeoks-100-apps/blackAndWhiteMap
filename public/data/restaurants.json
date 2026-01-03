@@ -2079,5 +2079,168 @@
     },
     "tags": ["미쉐린", "코스", "예약필수"],
     "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "seoul-tianmimi-gangnam",
+    "chef": { "name": "정지선", "season": 1, "team": "white", "isTop7": true },
+    "restaurant": {
+      "name": "티엔미미 강남점",
+      "category": ["중식", "딤섬"],
+      "address": "서울 서초구 사임당로 143 104-1, 104-2, 104-3호",
+      "lat": 37.496,
+      "lng": 127.0287,
+      "naverPlaceUrl": "https://m.place.naver.com/restaurant/1277052112/home",
+      "naverBookingUrl": "https://app.catchtable.co.kr/ct/shop/tianmimi",
+      "phone": "0507-1476-1686",
+      "instagram": "https://www.instagram.com/tianmimi_gangnam/"
+    },
+    "tags": ["런치", "디너", "예약필수"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "seoul-negilive-seongsu",
+    "chef": { "name": "장호준", "season": 1, "team": "white", "isTop7": true },
+    "restaurant": {
+      "name": "네기라이브",
+      "category": ["일식", "해산물"],
+      "address": "서울 성동구 성수이로 97 5층 일부",
+      "lat": 37.5448,
+      "lng": 127.056,
+      "naverPlaceUrl": "https://m.place.naver.com/restaurant/1369870234/home",
+      "naverBookingUrl": "https://app.catchtable.co.kr/ct/shop/negilive",
+      "phone": "02-466-2490"
+    },
+    "tags": ["디너", "예약가능", "해산물"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "seoul-deepin-sindang",
+    "chef": { "name": "윤남노", "season": 1, "team": "black", "isTop7": true },
+    "restaurant": {
+      "name": "디핀",
+      "category": ["양식", "파스타"],
+      "address": "서울 중구 퇴계로 411 1층 디핀",
+      "lat": 37.5656,
+      "lng": 127.0172,
+      "naverPlaceUrl": "https://m.place.naver.com/restaurant/1647309508/home",
+      "naverBookingUrl": "",
+      "phone": "02-3298-5046",
+      "instagram": "https://www.instagram.com/deepin_seoul/"
+    },
+    "tags": ["디너", "예약가능", "파스타"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "seoul-via-toledo-pastabar",
+    "chef": { "name": "권성준", "season": 1, "team": "black", "isTop7": true },
+    "restaurant": {
+      "name": "비아 톨레도 파스타바",
+      "category": ["이탈리아", "파스타바"],
+      "address": "서울 용산구 원효로83길 7-2 1층",
+      "lat": 37.5419,
+      "lng": 126.9728,
+      "naverPlaceUrl": "https://m.place.naver.com/restaurant/1018077796/home",
+      "naverBookingUrl": "https://catchtable.co.kr/viatoledo",
+      "phone": "0507-1384-0986"
+    },
+    "tags": ["디너", "코스", "예약필수"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "seoul-trid-apgujeongrodeo",
+    "chef": { "name": "강승원", "season": 1, "team": "black", "isTop7": true },
+    "restaurant": {
+      "name": "트리드",
+      "category": ["파인다이닝", "양식"],
+      "address": "서울 강남구 선릉로162길 16 2층",
+      "lat": 37.5268,
+      "lng": 127.0408,
+      "naverPlaceUrl": "https://m.place.naver.com/restaurant/1570882425/home",
+      "naverBookingUrl": "https://catchtable.co.kr/trid",
+      "phone": "02-512-8312"
+    },
+    "tags": ["런치", "디너", "미쉐린", "예약필수"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "seoul-fabri-kitchen-yongsan",
+    "chef": { "name": "파브리", "season": 1, "team": "white", "isTop7": false },
+    "restaurant": {
+      "name": "파브리키친",
+      "category": ["이탈리아", "다이닝"],
+      "address": "서울 용산구 한강대로15길 23-6 1층",
+      "lat": 37.529,
+      "lng": 126.9642,
+      "naverPlaceUrl": "https://m.place.naver.com/restaurant/1775308300/home",
+      "naverBookingUrl": "https://app.catchtable.co.kr/ct/shop/FabriKitchenYongsan",
+      "phone": "070-7576-4830"
+    },
+    "tags": ["런치", "디너", "예약가능"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "seoul-evett-dosan",
+    "chef": { "name": "조셉 리저우드", "season": 1, "team": "white", "isTop7": false },
+    "restaurant": {
+      "name": "에빗",
+      "category": ["파인다이닝", "양식"],
+      "address": "서울 강남구 도산대로45길 10-5 1층 EVETT",
+      "lat": 37.5237,
+      "lng": 127.0369,
+      "naverPlaceUrl": "https://m.place.naver.com/restaurant/1838135293/home",
+      "naverBookingUrl": "",
+      "phone": "0507-1399-1029"
+    },
+    "tags": ["디너", "미쉐린", "예약필수"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "seoul-yunseoul-seolleungro",
+    "chef": { "name": "김도윤", "season": 1, "team": "white", "isTop7": false },
+    "restaurant": {
+      "name": "윤서울",
+      "category": ["한식", "파인다이닝"],
+      "address": "서울 강남구 선릉로 805 1층",
+      "lat": 37.5228,
+      "lng": 127.0402,
+      "naverPlaceUrl": "https://m.place.naver.com/restaurant/1698341503/home",
+      "naverBookingUrl": "",
+      "phone": "",
+      "instagram": "https://www.instagram.com/yunseoul.restaurant"
+    },
+    "tags": ["미쉐린", "예약필수", "한식코스"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "seoul-aupetitvert-seochon",
+    "chef": { "name": "박준우", "season": 1, "team": "white", "isTop7": false },
+    "restaurant": {
+      "name": "카페 오쁘띠베르",
+      "category": ["카페", "디저트"],
+      "address": "서울 종로구 자하문로 47-1 1층 카페",
+      "lat": 37.5794,
+      "lng": 126.9708,
+      "naverPlaceUrl": "https://m.place.naver.com/restaurant/1445845015/home",
+      "naverBookingUrl": "",
+      "phone": "02-735-7569"
+    },
+    "tags": ["카페", "디저트", "테이크아웃"],
+    "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "seoul-jinjin-hapjeong",
+    "chef": { "name": "황진선", "season": 1, "team": "white", "isTop7": false },
+    "restaurant": {
+      "name": "진진",
+      "category": ["중식", "중식당"],
+      "address": "서울 마포구 월드컵북로1길 60 1층 진진",
+      "lat": 37.549,
+      "lng": 126.9127,
+      "naverPlaceUrl": "https://m.place.naver.com/restaurant/36202928/home",
+      "naverBookingUrl": "",
+      "phone": "0507-1447-8879"
+    },
+    "tags": ["런치", "디너", "미쉐린", "예약가능"],
+    "updatedAt": "2026-01-02"
   }
 ]
