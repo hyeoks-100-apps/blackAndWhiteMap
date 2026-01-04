@@ -72,6 +72,18 @@ function App() {
         <p className="muted">검색/필터 후 지도 마커와 리스트가 함께 갱신됩니다.</p>
       </header>
 
+      <section className="promo-banner" aria-label="쿠팡 파트너스 안내">
+        <a
+          className="promo-link"
+          href="https://link.coupang.com/a/dlcZG2"
+          target="_blank"
+          rel="noreferrer noopener sponsored"
+        >
+          쿠팡 파트너스 바로가기
+          <span className="promo-sub">추천 상품 보러가기</span>
+        </a>
+      </section>
+
       <main className="layout">
         <section className="left">
           <FiltersPanel filters={filters} seasons={seasons} onChange={setFilters} />
