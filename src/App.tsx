@@ -74,16 +74,19 @@ function App() {
 
       <section className="promo-banner" aria-label="쿠팡 파트너스 안내">
         <a
-          className="promo-link-card"
-          href="https://link.coupang.com/a/dlcZG2"
+          className="promo-image-link"
+          href="https://link.coupang.com/a/dlfLQi"
           target="_blank"
           rel="noreferrer noopener sponsored"
+          referrerPolicy="unsafe-url"
         >
-          <div className="promo-logo">쿠팡</div>
-          <div className="promo-text">
-            <strong>파트너스 배너</strong>
-            <span>추천 상품 보러가기</span>
-          </div>
+          <img
+            src="https://image9.coupangcdn.com/image/affiliate/banner/54fab81672c161135ffdd8abbd084b40@2x.jpg"
+            alt="크리넥스 데코 앤 소프트 수딩플러스 천연펄프 3겹 고급롤화장지, 27m, 24개입, 1개"
+            width={120}
+            height={240}
+            loading="lazy"
+          />
         </a>
       </section>
 
