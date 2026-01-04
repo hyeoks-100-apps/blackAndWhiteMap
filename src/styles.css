@@ -60,25 +60,16 @@ body {
   background: #f8fafc;
 }
 
-.promo-link {
-  display: inline-flex;
-  flex-direction: column;
-  gap: 4px;
-  font-weight: 800;
-  color: #0f172a;
-  text-decoration: none;
-  font-size: 15px;
+.promo-link-image {
+  display: block;
 }
 
-.promo-link:hover {
-  color: #2563eb;
-  text-decoration: underline;
-}
-
-.promo-sub {
-  font-size: 13px;
-  color: #475569;
-  font-weight: 600;
+.promo-link-image img {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
 }
 
 .left,

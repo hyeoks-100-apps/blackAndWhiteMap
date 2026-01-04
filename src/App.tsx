@@ -74,13 +74,16 @@ function App() {
 
       <section className="promo-banner" aria-label="쿠팡 파트너스 안내">
         <a
-          className="promo-link"
+          className="promo-link-image"
           href="https://link.coupang.com/a/dlcZG2"
           target="_blank"
           rel="noreferrer noopener sponsored"
         >
-          쿠팡 파트너스 바로가기
-          <span className="promo-sub">추천 상품 보러가기</span>
+          <img
+            src="https://via.placeholder.com/1200x220.png?text=%EC%BF%A0%ED%8C%A1+%ED%8C%8C%ED%8A%B8%EB%84%88%EC%8A%A4+%7C+%EC%B6%94%EC%B2%9C+%EC%83%81%ED%92%88+%EB%B3%B4%EA%B8%B0"
+            alt="쿠팡 파트너스 배너 - 추천 상품 보기"
+            loading="lazy"
+          />
         </a>
       </section>
 
