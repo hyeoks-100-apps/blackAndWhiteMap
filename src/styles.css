@@ -53,23 +53,50 @@ body {
 }
 
 .promo-banner {
-  padding: 12px 16px;
   margin: 12px 16px 0;
+}
+
+.promo-link-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
   border-radius: 12px;
-  border: 1px dashed #cbd5e1;
-  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 50%, #f8fafc 100%);
+  text-decoration: none;
+  color: #0f172a;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
 }
 
-.promo-link-image {
-  display: block;
+.promo-link-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
 }
 
-.promo-link-image img {
-  width: 100%;
-  max-height: 220px;
-  object-fit: cover;
+.promo-logo {
+  background: #2563eb;
+  color: #fff;
   border-radius: 10px;
-  display: block;
+  padding: 10px 12px;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  font-size: 14px;
+}
+
+.promo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 14px;
+}
+
+.promo-text strong {
+  font-size: 15px;
+}
+
+.promo-text span {
+  color: #475569;
 }
 
 .left,
