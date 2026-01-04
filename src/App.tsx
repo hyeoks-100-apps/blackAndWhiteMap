@@ -72,21 +72,6 @@ function App() {
         <p className="muted">검색/필터 후 지도 마커와 리스트가 함께 갱신됩니다.</p>
       </header>
 
-      <section className="promo-banner" aria-label="쿠팡 파트너스 안내">
-        <a
-          className="promo-link-card"
-          href="https://link.coupang.com/a/dlcZG2"
-          target="_blank"
-          rel="noreferrer noopener sponsored"
-        >
-          <div className="promo-logo">쿠팡</div>
-          <div className="promo-text">
-            <strong>파트너스 배너</strong>
-            <span>추천 상품 보러가기</span>
-          </div>
-        </a>
-      </section>
-
       <main className="layout">
         <section className="left">
           <FiltersPanel filters={filters} seasons={seasons} onChange={setFilters} />
@@ -103,6 +88,24 @@ function App() {
           )}
           {loading && <div className="panel map-placeholder">지도를 불러오는 중...</div>}
           {error && !loading && <div className="panel map-placeholder">지도를 표시할 수 없습니다.</div>}
+
+          <section className="map-banner" aria-label="쿠팡 파트너스 안내">
+            <a
+              className="promo-image-link"
+              href="https://link.coupang.com/a/dlfLQi"
+              target="_blank"
+              rel="noreferrer noopener sponsored"
+              referrerPolicy="unsafe-url"
+            >
+              <img
+                src="https://image9.coupangcdn.com/image/affiliate/banner/54fab81672c161135ffdd8abbd084b40@2x.jpg"
+                alt="크리넥스 데코 앤 소프트 수딩플러스 천연펄프 3겹 고급롤화장지, 27m, 24개입, 1개"
+                width={96}
+                height={192}
+                loading="lazy"
+              />
+            </a>
+          </section>
         </section>
       </main>
 
