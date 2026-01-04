@@ -2242,5 +2242,155 @@
     },
     "tags": ["런치", "디너", "미쉐린", "예약가능"],
     "updatedAt": "2026-01-02"
+  },
+  {
+    "id": "seoul-myeon-seoul",
+    "chef": { "name": "김도윤", "season": 1, "team": "white", "isTop7": false },
+    "restaurant": {
+      "name": "면서울",
+      "category": ["한식", "면요리"],
+      "address": "서울 강남구 선릉로 805 1층",
+      "lat": 37.5229,
+      "lng": 127.0386,
+      "naverPlaceUrl": "https://map.naver.com/v5/search/%EB%A9%B4%EC%84%9C%EC%9A%B8%20%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EC%84%A0%EB%A6%89%EB%A1%9C%20805",
+      "naverBookingUrl": ""
+    },
+    "tags": ["면요리", "런치", "캐주얼"],
+    "updatedAt": "2026-01-03"
+  },
+  {
+    "id": "yongsan-tanmak",
+    "chef": { "name": "탄막", "season": 1, "team": "black", "isTop7": false },
+    "restaurant": {
+      "name": "탄막",
+      "category": ["한식", "주점"],
+      "address": "서울 용산구 한강대로84길 5-3 1층 15호",
+      "lat": 37.5418,
+      "lng": 126.9732,
+      "naverPlaceUrl": "https://map.naver.com/v5/search/%ED%83%84%EB%A7%89%20%EC%84%9C%EC%9A%B8%20%EC%9A%A9%EC%82%B0%EA%B5%AC%20%ED%95%9C%EA%B0%95%EB%8C%80%EB%A1%9C84%EA%B8%B8%205-3",
+      "naverBookingUrl": ""
+    },
+    "tags": ["디너", "캐주얼"],
+    "updatedAt": "2026-01-03"
+  },
+  {
+    "id": "anguk-sogeumjip-deli",
+    "chef": { "name": "잠봉뵈르 맨", "season": 1, "team": "black", "isTop7": false },
+    "restaurant": {
+      "name": "소금집델리(안국점)",
+      "category": ["델리", "샌드위치"],
+      "address": "서울 종로구 북촌로4길 19 1층",
+      "lat": 37.5817,
+      "lng": 126.9846,
+      "naverPlaceUrl": "https://map.naver.com/v5/search/%EC%86%8C%EA%B8%88%EC%A7%91%EB%8D%B8%EB%A6%AC%20%EC%95%88%EA%B5%AD%EC%A0%90%20%EC%84%9C%EC%9A%B8%20%EC%A2%85%EB%A1%9C%EA%B5%AC%20%EB%B6%81%EC%B4%8C%EB%A1%9C4%EA%B8%B8%2019",
+      "naverBookingUrl": ""
+    },
+    "tags": ["샌드위치", "테이크아웃", "런치"],
+    "updatedAt": "2026-01-03"
+  },
+  {
+    "id": "eunpyeong-snackbar-seiji",
+    "chef": { "name": "일식 타짜", "season": 1, "team": "black", "isTop7": false },
+    "restaurant": {
+      "name": "스낵바 세이지",
+      "category": ["일식", "바"],
+      "address": "서울 은평구 연서로25길 20-4",
+      "lat": 37.611,
+      "lng": 126.929,
+      "naverPlaceUrl": "https://map.naver.com/v5/search/%EC%8A%A4%EB%82%B5%EB%B0%94%20%EC%84%B8%EC%9D%B4%EC%A7%80%20%EC%84%9C%EC%9A%B8%20%EC%9D%80%ED%8F%89%EA%B5%AC%20%EC%97%B0%EC%84%9C%EB%A1%9C25%EA%B8%B8%2020-4",
+      "naverBookingUrl": ""
+    },
+    "tags": ["디너", "이자카야"],
+    "updatedAt": "2026-01-03"
+  },
+  {
+    "id": "seongbuk-hoohu-seiji",
+    "chef": { "name": "일식 타짜", "season": 1, "team": "black", "isTop7": false },
+    "restaurant": {
+      "name": "후후 세이지",
+      "category": ["일식", "이자카야"],
+      "address": "서울 성북구 정릉로26길 32",
+      "lat": 37.605,
+      "lng": 127.0115,
+      "naverPlaceUrl": "https://map.naver.com/v5/search/%ED%9B%84%ED%9B%84%20%EC%84%B8%EC%9D%B4%EC%A7%80%20%EC%84%9C%EC%9A%B8%20%EC%84%B1%EB%B6%81%EA%B5%AC%20%EC%A0%95%EB%A6%89%EB%A1%9C26%EA%B8%B8%2032",
+      "naverBookingUrl": ""
+    },
+    "tags": ["디너", "이자카야"],
+    "updatedAt": "2026-01-03"
+  },
+  {
+    "id": "shinyongsan-mimiok",
+    "chef": { "name": "캠핑맨", "season": 1, "team": "black", "isTop7": false },
+    "restaurant": {
+      "name": "미미옥(신용산점)",
+      "category": ["한식", "국밥"],
+      "address": "서울 용산구 한강대로15길 27",
+      "lat": 37.531,
+      "lng": 126.9662,
+      "naverPlaceUrl": "https://map.naver.com/v5/search/%EB%AF%B8%EB%AF%B8%EC%98%A5%20%EC%8B%A0%EC%9A%A9%EC%82%B0%EC%A0%90%20%EC%84%9C%EC%9A%B8%20%EC%9A%A9%EC%82%B0%EA%B5%AC%20%ED%95%9C%EA%B0%95%EB%8C%80%EB%A1%9C15%EA%B8%B8%2027",
+      "naverBookingUrl": ""
+    },
+    "tags": ["국밥", "런치", "웨이팅"],
+    "updatedAt": "2026-01-03"
+  },
+  {
+    "id": "shinyongsan-burgerboy",
+    "chef": { "name": "캠핑맨", "season": 1, "team": "black", "isTop7": false },
+    "restaurant": {
+      "name": "버거보이(신용산점)",
+      "category": ["양식", "버거"],
+      "address": "서울 용산구 한강대로15길 29",
+      "lat": 37.5311,
+      "lng": 126.966,
+      "naverPlaceUrl": "https://map.naver.com/v5/search/%EB%B2%84%EA%B1%B0%EB%B3%B4%EC%9D%B4%20%EC%8B%A0%EC%9A%A9%EC%82%B0%EC%A0%90%20%EC%84%9C%EC%9A%B8%20%EC%9A%A9%EC%82%B0%EA%B5%AC%20%ED%95%9C%EA%B0%95%EB%8C%80%EB%A1%9C15%EA%B8%B8%2029",
+      "naverBookingUrl": ""
+    },
+    "tags": ["버거", "테이크아웃", "런치"],
+    "updatedAt": "2026-01-03"
+  },
+  {
+    "id": "yongsan-shonino",
+    "chef": { "name": "캠핑맨", "season": 1, "team": "black", "isTop7": false },
+    "restaurant": {
+      "name": "쇼니노",
+      "category": ["양식", "캐주얼"],
+      "address": "서울 용산구 한강대로21길 17-18 1층",
+      "lat": 37.529,
+      "lng": 126.9678,
+      "naverPlaceUrl": "https://map.naver.com/v5/search/%EC%87%BC%EB%8B%88%EB%85%B8%20%EC%84%9C%EC%9A%B8%20%EC%9A%A9%EC%82%B0%EA%B5%AC%20%ED%95%9C%EA%B0%95%EB%8C%80%EB%A1%9C21%EA%B8%B8%2017-18",
+      "naverBookingUrl": ""
+    },
+    "tags": ["디너", "캐주얼"],
+    "updatedAt": "2026-01-03"
+  },
+  {
+    "id": "mapo-bulkeun",
+    "chef": { "name": "4.8.100", "season": 1, "team": "black", "isTop7": false },
+    "restaurant": {
+      "name": "불끈",
+      "category": ["주점", "퓨전"],
+      "address": "서울 마포구 토정로35길 11 지1층 B01호",
+      "lat": 37.5447,
+      "lng": 126.9274,
+      "naverPlaceUrl": "https://map.naver.com/v5/search/%EB%B6%88%EB%81%88%20%EC%84%9C%EC%9A%B8%20%EB%A7%88%ED%8F%AC%EA%B5%AC%20%ED%86%A0%EC%A0%95%EB%A1%9C35%EA%B8%B8%2011",
+      "naverBookingUrl": ""
+    },
+    "tags": ["디너", "주점"],
+    "updatedAt": "2026-01-03"
+  },
+  {
+    "id": "seongsu-cheonhajeil-sotttukkeong",
+    "chef": { "name": "4.8.100", "season": 1, "team": "black", "isTop7": false },
+    "restaurant": {
+      "name": "천하제일 솥뚜껑",
+      "category": ["한식", "고깃집"],
+      "address": "서울 성동구 성수이로7길 27 1층 105-1호",
+      "lat": 37.5442,
+      "lng": 127.0547,
+      "naverPlaceUrl": "https://map.naver.com/v5/search/%EC%B2%9C%ED%95%98%EC%A0%9C%EC%9D%BC%20%EC%86%A5%EB%9A%9C%EA%BB%91%20%EC%84%9C%EC%9A%B8%20%EC%84%B1%EB%8F%99%EA%B5%AC%20%EC%84%B1%EC%88%98%EC%9D%B4%EB%A1%9C7%EA%B8%B8%2027",
+      "naverBookingUrl": ""
+    },
+    "tags": ["고기", "디너", "웨이팅"],
+    "updatedAt": "2026-01-03"
   }
 ]
