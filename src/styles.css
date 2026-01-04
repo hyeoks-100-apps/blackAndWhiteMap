@@ -85,9 +85,10 @@ body {
 }
 
 .map-banner {
-  position: absolute;
-  right: 16px;
-  bottom: 16px;
+  position: fixed;
+  right: 20px;
+  bottom: 24px;
+  z-index: 20;
 }
 
 .panel {
@@ -377,10 +378,9 @@ select {
   }
 
   .map-banner {
-    position: static;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
   }
 }
 
@@ -401,5 +401,12 @@ select {
     width: calc(100% - 24px);
     max-height: 65vh;
     overflow-y: auto;
+  }
+
+  .map-banner {
+    position: static;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
   }
 }
