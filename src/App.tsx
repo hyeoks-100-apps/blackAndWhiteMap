@@ -30,6 +30,7 @@ function App() {
   const { data, loading, error } = useRestaurants();
   const [filters, setFilters] = useState<Filters>(defaultFilters);
   const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [showAllMarkers, setShowAllMarkers] = useState(true);
 
   const filtered = useMemo(() => filterRestaurants(data, filters), [data, filters]);
   const seasons = useMemo(() => getSeasons(data), [data]);
@@ -57,9 +58,12 @@ function App() {
   }, [filtered, selectedId]);
 
   const selectedRestaurant = data.find((item) => item.id === selectedId) ?? null;
+  const mapRestaurants =
+    selectedId && !showAllMarkers ? filtered.filter((item) => item.id === selectedId) : filtered;
 
   const handleSelect = (id: string) => {
     setSelectedId(id);
+    setShowAllMarkers(false);
   };
 
   return (
@@ -83,8 +87,18 @@ function App() {
         </section>
 
         <section className="right">
+          <div className="map-controls">
+            <label className="map-toggle">
+              <input
+                type="checkbox"
+                checked={showAllMarkers}
+                onChange={(event) => setShowAllMarkers(event.target.checked)}
+              />
+              전체 식당 마커 보기
+            </label>
+          </div>
           {!loading && !error && (
-            <MapView restaurants={filtered} selectedId={selectedId} onSelect={handleSelect} />
+            <MapView restaurants={mapRestaurants} selectedId={selectedId} onSelect={handleSelect} />
           )}
           {loading && <div className="panel map-placeholder">지도를 불러오는 중...</div>}
           {error && !loading && <div className="panel map-placeholder">지도를 표시할 수 없습니다.</div>}

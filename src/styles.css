@@ -84,6 +84,31 @@ body {
   position: relative;
 }
 
+.map-controls {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 15;
+}
+
+.map-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+  font-size: 13px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.map-toggle input {
+  margin: 0;
+}
+
 .map-banner {
   position: fixed;
   right: 20px;
@@ -259,6 +284,13 @@ select {
   z-index: 1000;
 }
 
+.detail-highlight {
+  border: 2px solid transparent;
+  background:
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(135deg, #6366f1, #f97316) border-box;
+}
+
 .detail-header {
   display: flex;
   justify-content: space-between;
@@ -382,6 +414,13 @@ select {
     right: 16px;
     bottom: 16px;
   }
+
+  .map-controls {
+    position: static;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -408,5 +447,10 @@ select {
     display: flex;
     justify-content: center;
     margin: 10px 0;
+  }
+
+  .map-controls {
+    justify-content: center;
+    margin-bottom: 12px;
   }
 }
