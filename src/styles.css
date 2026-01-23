@@ -116,6 +116,24 @@ body {
   z-index: 20;
 }
 
+.adsense-panel {
+  margin-top: 12px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  min-height: 120px;
+}
+
+.adsense-panel .adsbygoogle {
+  width: 100%;
+  max-width: 640px;
+  min-height: 100px;
+}
+
+.adsense-panel iframe {
+  max-width: 100%;
+}
+
 .panel {
   background: #ffffff;
   border: 1px solid #e2e8f0;

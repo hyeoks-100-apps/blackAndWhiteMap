@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { DetailDrawer } from './components/DetailDrawer';
 import { FiltersPanel } from './components/Filters';
+import { AdsenseBanner } from './components/AdsenseBanner';
 import { MapView } from './components/MapView';
 import { RestaurantList } from './components/RestaurantList';
 import { useRestaurants } from './hooks/useRestaurants';
@@ -79,6 +80,7 @@ function App() {
       <main className="layout">
         <section className="left">
           <FiltersPanel filters={filters} seasons={seasons} onChange={setFilters} />
+          <AdsenseBanner className="panel adsense-panel" />
           {loading && <div className="panel list">로딩 중...</div>}
           {error && !loading && <div className="panel list error">{error}</div>}
           {!loading && !error && (
