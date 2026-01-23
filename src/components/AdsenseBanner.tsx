@@ -11,6 +11,7 @@ declare global {
 }
 
 const ADSENSE_CLIENT = 'ca-pub-2370970936034063';
+const ADSENSE_SCRIPT_ID = 'adsense-script';
 
 export function AdsenseBanner({ className }: AdsenseBannerProps) {
   const adSlot = import.meta.env.VITE_GOOGLE_ADSENSE_SLOT;
@@ -18,6 +19,20 @@ export function AdsenseBanner({ className }: AdsenseBannerProps) {
   useEffect(() => {
     if (!adSlot) return;
     if (typeof window === 'undefined') return;
+    const existing = document.getElementById(ADSENSE_SCRIPT_ID);
+    if (!existing) {
+      const script = document.createElement('script');
+      script.id = ADSENSE_SCRIPT_ID;
+      script.async = true;
+      script.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`;
+      script.crossOrigin = 'anonymous';
+      document.head.appendChild(script);
+      script.addEventListener('load', () => {
+        window.adsbygoogle = window.adsbygoogle || [];
+        window.adsbygoogle.push({});
+      });
+      return;
+    }
     try {
       window.adsbygoogle = window.adsbygoogle || [];
       window.adsbygoogle.push({});
