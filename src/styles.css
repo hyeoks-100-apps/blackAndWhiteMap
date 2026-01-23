@@ -52,56 +52,86 @@ body {
   flex: 1;
 }
 
-.promo-banner {
-  margin: 12px 16px 0;
-}
-
-.promo-link-card {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 12px 16px;
-  border-radius: 12px;
-  border: 1px solid #e2e8f0;
-  background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 50%, #f8fafc 100%);
-  text-decoration: none;
-  color: #0f172a;
-  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
-}
-
-.promo-link-card:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
-}
-
-.promo-logo {
-  background: #2563eb;
-  color: #fff;
+.promo-image-link {
+  display: inline-flex;
+  padding: 6px;
   border-radius: 10px;
-  padding: 10px 12px;
-  font-weight: 900;
-  letter-spacing: 0.02em;
-  font-size: 14px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+  text-decoration: none;
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
 }
 
-.promo-text {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  font-size: 14px;
+.promo-image-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.1);
 }
 
-.promo-text strong {
-  font-size: 15px;
-}
-
-.promo-text span {
-  color: #475569;
+.promo-image-link img {
+  display: block;
+  width: 96px;
+  height: 192px;
+  object-fit: cover;
 }
 
 .left,
 .right {
   min-height: 0;
+}
+
+.right {
+  position: relative;
+}
+
+.map-controls {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 15;
+}
+
+.map-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+  font-size: 13px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.map-toggle input {
+  margin: 0;
+}
+
+.map-banner {
+  position: fixed;
+  right: 20px;
+  bottom: 24px;
+  z-index: 20;
+}
+
+.adsense-panel {
+  margin-top: 12px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  min-height: 120px;
+}
+
+.adsense-panel .adsbygoogle {
+  width: 100%;
+  max-width: 640px;
+  min-height: 100px;
+}
+
+.adsense-panel iframe {
+  max-width: 100%;
 }
 
 .panel {
@@ -272,6 +302,13 @@ select {
   z-index: 1000;
 }
 
+.detail-highlight {
+  border: 2px solid transparent;
+  background:
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(135deg, #6366f1, #f97316) border-box;
+}
+
 .detail-header {
   display: flex;
   justify-content: space-between;
@@ -380,10 +417,6 @@ select {
     grid-template-columns: 1fr;
   }
 
-  .promo-banner {
-    margin: 12px 12px 0;
-  }
-
   .map-wrapper,
   .map-placeholder {
     height: 50vh;
@@ -392,6 +425,19 @@ select {
   .detail {
     width: calc(100% - 24px);
     right: 12px;
+  }
+
+  .map-banner {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+  }
+
+  .map-controls {
+    position: static;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
   }
 }
 
@@ -412,5 +458,17 @@ select {
     width: calc(100% - 24px);
     max-height: 65vh;
     overflow-y: auto;
+  }
+
+  .map-banner {
+    position: static;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  .map-controls {
+    justify-content: center;
+    margin-bottom: 12px;
   }
 }
