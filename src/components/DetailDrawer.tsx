@@ -41,7 +41,7 @@ export function DetailDrawer({ restaurant, onClose }: DetailDrawerProps) {
   };
 
   return (
-    <aside className="detail">
+    <aside className="detail detail-highlight">
       <div className="detail-header">
         <div>
           <h2>{info.name}</h2>
