@@ -14,7 +14,11 @@ const ADSENSE_CLIENT = 'ca-pub-2370970936034063';
 const ADSENSE_SCRIPT_ID = 'adsense-script';
 
 export function AdsenseBanner({ className }: AdsenseBannerProps) {
-  const adSlot = import.meta.env.VITE_GOOGLE_ADSENSE_SLOT;
+  const metaSlot =
+    typeof document !== 'undefined'
+      ? document.querySelector<HTMLMetaElement>('meta[name="google-adsense-slot"]')?.content
+      : undefined;
+  const adSlot = import.meta.env.VITE_GOOGLE_ADSENSE_SLOT || metaSlot;
 
   useEffect(() => {
     if (!adSlot) return;
@@ -41,7 +45,16 @@ export function AdsenseBanner({ className }: AdsenseBannerProps) {
     }
   }, [adSlot]);
 
-  if (!adSlot) return null;
+  if (!adSlot) {
+    if (import.meta.env.DEV) {
+      return (
+        <div className={className}>
+          <div className="adsense-placeholder">광고 슬롯이 설정되지 않았습니다.</div>
+        </div>
+      );
+    }
+    return null;
+  }
 
   return (
     <div className={className}>
