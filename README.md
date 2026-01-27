@@ -36,6 +36,11 @@ npm run build
 - 기본 브랜치(`main`) push 시 자동으로 워크플로우가 실행되어 `dist/`를 Pages로 배포합니다.
 - Vite `base: './'` 설정으로 GitHub Pages 서브경로에서도 동작합니다.
 
+## ads.txt 유지 방법
+- Google AdSense 인증을 위해 `public/ads.txt`에 ads.txt 내용을 유지합니다.
+- Vite 빌드 시 `public/`의 정적 파일이 `dist/` 루트로 복사되므로, 배포 후 `/ads.txt`로 접근 가능합니다.
+- ads.txt 내용을 변경해야 할 경우 `public/ads.txt` 파일만 수정하세요.
+
 ## 기술 스택
 - Vite, React, TypeScript
 - Leaflet & React-Leaflet
