@@ -8,6 +8,18 @@ export const localeOptions: Array<{ value: Locale; label: string }> = [
   { value: 'zh', label: '中文' },
 ];
 
+export const detectLocale = (): Locale => {
+  if (typeof navigator === 'undefined') return 'ko';
+  const candidates = [...navigator.languages, navigator.language].filter(Boolean);
+  for (const locale of candidates) {
+    const normalized = locale.toLowerCase();
+    if (normalized.startsWith('ja')) return 'ja';
+    if (normalized.startsWith('zh')) return 'zh';
+    if (normalized.startsWith('ko')) return 'ko';
+  }
+  return 'ko';
+};
+
 export type I18nStrings = {
   eyebrow: string;
   title: string;

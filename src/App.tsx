@@ -5,7 +5,7 @@ import { AdsenseBanner } from './components/AdsenseBanner';
 import { MapView } from './components/MapView';
 import { RestaurantList } from './components/RestaurantList';
 import { useRestaurants } from './hooks/useRestaurants';
-import { Locale, localeOptions, translations } from './i18n';
+import { detectLocale, Locale, localeOptions, translations } from './i18n';
 import { Filters, Restaurant } from './types';
 import { filterRestaurants } from './utils/filter';
 import { readIdFromHash, writeHash } from './utils/hash';
@@ -36,7 +36,10 @@ function App() {
   const [locale, setLocale] = useState<Locale>(() => {
     if (typeof window === 'undefined') return 'ko';
     const stored = window.localStorage.getItem('locale');
-    return localeOptions.some((option) => option.value === stored) ? (stored as Locale) : 'ko';
+    if (localeOptions.some((option) => option.value === stored)) {
+      return stored as Locale;
+    }
+    return detectLocale();
   });
 
   const filtered = useMemo(() => filterRestaurants(data, filters), [data, filters]);
@@ -46,6 +49,7 @@ function App() {
   useEffect(() => {
     if (typeof window === 'undefined') return;
     window.localStorage.setItem('locale', locale);
+    document.documentElement.lang = locale;
   }, [locale]);
 
   useEffect(() => {
