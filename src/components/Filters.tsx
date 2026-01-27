@@ -4,16 +4,20 @@ interface FiltersProps {
   filters: Filters;
   seasons: number[];
   onChange: (filters: Filters) => void;
+  labels: {
+    searchLabel: string;
+    searchPlaceholder: string;
+    seasonLabel: string;
+    seasonAll: string;
+    seasonOption: (season: number) => string;
+    teamLabel: string;
+    teamOptions: Record<Filters['team'], string>;
+    onlyBooking: string;
+    onlyTop7: string;
+  };
 }
 
-const teamLabel: Record<Filters['team'], string> = {
-  all: '팀 전체',
-  black: '블랙',
-  white: '화이트',
-  unknown: '미정',
-};
-
-export function FiltersPanel({ filters, seasons, onChange }: FiltersProps) {
+export function FiltersPanel({ filters, seasons, onChange, labels }: FiltersProps) {
   const handleInput = (key: keyof Filters, value: Filters[keyof Filters]) => {
     onChange({ ...filters, [key]: value });
   };
@@ -21,11 +25,11 @@ export function FiltersPanel({ filters, seasons, onChange }: FiltersProps) {
   return (
     <div className="panel filters">
       <div className="field">
-        <label htmlFor="search">검색</label>
+        <label htmlFor="search">{labels.searchLabel}</label>
         <input
           id="search"
           type="text"
-          placeholder="셰프, 식당, 카테고리, 주소, 태그 검색"
+          placeholder={labels.searchPlaceholder}
           value={filters.search}
           onChange={(e) => handleInput('search', e.target.value)}
         />
@@ -33,7 +37,7 @@ export function FiltersPanel({ filters, seasons, onChange }: FiltersProps) {
 
       <div className="field-group">
         <div className="field">
-          <label htmlFor="season">시즌</label>
+          <label htmlFor="season">{labels.seasonLabel}</label>
           <select
             id="season"
             value={filters.season}
@@ -41,17 +45,17 @@ export function FiltersPanel({ filters, seasons, onChange }: FiltersProps) {
               handleInput('season', e.target.value === 'all' ? 'all' : Number(e.target.value))
             }
           >
-            <option value="all">전체</option>
+            <option value="all">{labels.seasonAll}</option>
             {seasons.map((season) => (
               <option key={season} value={season}>
-                시즌 {season}
+                {labels.seasonOption(season)}
               </option>
             ))}
           </select>
         </div>
 
         <div className="field">
-          <label htmlFor="team">팀</label>
+          <label htmlFor="team">{labels.teamLabel}</label>
           <select
             id="team"
             value={filters.team}
@@ -59,7 +63,7 @@ export function FiltersPanel({ filters, seasons, onChange }: FiltersProps) {
           >
             {(['all', 'black', 'white', 'unknown'] as Filters['team'][]).map((team) => (
               <option key={team} value={team}>
-                {teamLabel[team]}
+                {labels.teamOptions[team]}
               </option>
             ))}
           </select>
@@ -72,7 +76,7 @@ export function FiltersPanel({ filters, seasons, onChange }: FiltersProps) {
           checked={filters.onlyBooking}
           onChange={(e) => handleInput('onlyBooking', e.target.checked)}
         />
-        네이버 예약 가능만
+        {labels.onlyBooking}
       </label>
 
       <label className="checkbox">
@@ -81,7 +85,7 @@ export function FiltersPanel({ filters, seasons, onChange }: FiltersProps) {
           checked={filters.onlyTop7}
           onChange={(e) => handleInput('onlyTop7', e.target.checked)}
         />
-        탑 7 셰프만 보기
+        {labels.onlyTop7}
       </label>
     </div>
   );
