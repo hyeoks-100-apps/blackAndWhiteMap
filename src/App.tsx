@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { DetailDrawer } from './components/DetailDrawer';
 import { FiltersPanel } from './components/Filters';
+import { AdsenseBanner } from './components/AdsenseBanner';
 import { MapView } from './components/MapView';
 import { RestaurantList } from './components/RestaurantList';
 import { useRestaurants } from './hooks/useRestaurants';
@@ -30,6 +31,7 @@ function App() {
   const { data, loading, error } = useRestaurants();
   const [filters, setFilters] = useState<Filters>(defaultFilters);
   const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [showAllMarkers, setShowAllMarkers] = useState(true);
 
   const filtered = useMemo(() => filterRestaurants(data, filters), [data, filters]);
   const seasons = useMemo(() => getSeasons(data), [data]);
@@ -57,9 +59,12 @@ function App() {
   }, [filtered, selectedId]);
 
   const selectedRestaurant = data.find((item) => item.id === selectedId) ?? null;
+  const mapRestaurants =
+    selectedId && !showAllMarkers ? filtered.filter((item) => item.id === selectedId) : filtered;
 
   const handleSelect = (id: string) => {
     setSelectedId(id);
+    setShowAllMarkers(false);
   };
 
   return (
@@ -72,24 +77,10 @@ function App() {
         <p className="muted">검색/필터 후 지도 마커와 리스트가 함께 갱신됩니다.</p>
       </header>
 
-      <section className="promo-banner" aria-label="쿠팡 파트너스 안내">
-        <a
-          className="promo-link-card"
-          href="https://link.coupang.com/a/dlcZG2"
-          target="_blank"
-          rel="noreferrer noopener sponsored"
-        >
-          <div className="promo-logo">쿠팡</div>
-          <div className="promo-text">
-            <strong>파트너스 배너</strong>
-            <span>추천 상품 보러가기</span>
-          </div>
-        </a>
-      </section>
-
       <main className="layout">
         <section className="left">
           <FiltersPanel filters={filters} seasons={seasons} onChange={setFilters} />
+          <AdsenseBanner className="panel adsense-panel" />
           {loading && <div className="panel list">로딩 중...</div>}
           {error && !loading && <div className="panel list error">{error}</div>}
           {!loading && !error && (
@@ -98,11 +89,39 @@ function App() {
         </section>
 
         <section className="right">
+          <div className="map-controls">
+            <label className="map-toggle">
+              <input
+                type="checkbox"
+                checked={showAllMarkers}
+                onChange={(event) => setShowAllMarkers(event.target.checked)}
+              />
+              전체 식당 마커 보기
+            </label>
+          </div>
           {!loading && !error && (
-            <MapView restaurants={filtered} selectedId={selectedId} onSelect={handleSelect} />
+            <MapView restaurants={mapRestaurants} selectedId={selectedId} onSelect={handleSelect} />
           )}
           {loading && <div className="panel map-placeholder">지도를 불러오는 중...</div>}
           {error && !loading && <div className="panel map-placeholder">지도를 표시할 수 없습니다.</div>}
+
+          <section className="map-banner" aria-label="쿠팡 파트너스 안내">
+            <a
+              className="promo-image-link"
+              href="https://link.coupang.com/a/dlfLQi"
+              target="_blank"
+              rel="noreferrer noopener sponsored"
+              referrerPolicy="unsafe-url"
+            >
+              <img
+                src="https://image9.coupangcdn.com/image/affiliate/banner/54fab81672c161135ffdd8abbd084b40@2x.jpg"
+                alt="크리넥스 데코 앤 소프트 수딩플러스 천연펄프 3겹 고급롤화장지, 27m, 24개입, 1개"
+                width={96}
+                height={192}
+                loading="lazy"
+              />
+            </a>
+          </section>
         </section>
       </main>
 
