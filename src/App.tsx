@@ -5,6 +5,7 @@ import { AdsenseBanner } from './components/AdsenseBanner';
 import { MapView } from './components/MapView';
 import { RestaurantList } from './components/RestaurantList';
 import { useRestaurants } from './hooks/useRestaurants';
+import { Locale, localeOptions, translations } from './i18n';
 import { Filters, Restaurant } from './types';
 import { filterRestaurants } from './utils/filter';
 import { readIdFromHash, writeHash } from './utils/hash';
@@ -32,9 +33,20 @@ function App() {
   const [filters, setFilters] = useState<Filters>(defaultFilters);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [showAllMarkers, setShowAllMarkers] = useState(true);
+  const [locale, setLocale] = useState<Locale>(() => {
+    if (typeof window === 'undefined') return 'ko';
+    const stored = window.localStorage.getItem('locale');
+    return localeOptions.some((option) => option.value === stored) ? (stored as Locale) : 'ko';
+  });
 
   const filtered = useMemo(() => filterRestaurants(data, filters), [data, filters]);
   const seasons = useMemo(() => getSeasons(data), [data]);
+  const strings = translations[locale];
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    window.localStorage.setItem('locale', locale);
+  }, [locale]);
 
   useEffect(() => {
     if (!data.length) return;
@@ -71,20 +83,42 @@ function App() {
     <div className="app">
       <header className="topbar">
         <div>
-          <p className="eyebrow">비공식 팬메이드</p>
-          <h1>흑백 요리사 지도 (비공식)</h1>
+          <p className="eyebrow">{strings.eyebrow}</p>
+          <h1>{strings.title}</h1>
         </div>
-        <p className="muted">검색/필터 후 지도 마커와 리스트가 함께 갱신됩니다.</p>
+        <div className="topbar-meta">
+          <p className="muted">{strings.subtitle}</p>
+          <label className="language-select">
+            <span className="sr-only">Language</span>
+            <select value={locale} onChange={(event) => setLocale(event.target.value as Locale)}>
+              {localeOptions.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
+            </select>
+          </label>
+        </div>
       </header>
 
       <main className="layout">
         <section className="left">
-          <FiltersPanel filters={filters} seasons={seasons} onChange={setFilters} />
+          <FiltersPanel filters={filters} seasons={seasons} onChange={setFilters} labels={strings.filters} />
           <AdsenseBanner className="panel adsense-panel" />
-          {loading && <div className="panel list">로딩 중...</div>}
+          {loading && <div className="panel list">{strings.listLoading}</div>}
           {error && !loading && <div className="panel list error">{error}</div>}
           {!loading && !error && (
-            <RestaurantList restaurants={filtered} selectedId={selectedId} onSelect={handleSelect} />
+            <RestaurantList
+              restaurants={filtered}
+              selectedId={selectedId}
+              onSelect={handleSelect}
+              labels={{
+                empty: strings.listEmpty,
+                top7: strings.badges.top7,
+                season: strings.badges.season,
+                team: strings.badges.team,
+              }}
+            />
           )}
         </section>
 
@@ -96,14 +130,14 @@ function App() {
                 checked={showAllMarkers}
                 onChange={(event) => setShowAllMarkers(event.target.checked)}
               />
-              전체 식당 마커 보기
+              {strings.mapToggle}
             </label>
           </div>
           {!loading && !error && (
             <MapView restaurants={mapRestaurants} selectedId={selectedId} onSelect={handleSelect} />
           )}
-          {loading && <div className="panel map-placeholder">지도를 불러오는 중...</div>}
-          {error && !loading && <div className="panel map-placeholder">지도를 표시할 수 없습니다.</div>}
+          {loading && <div className="panel map-placeholder">{strings.mapLoading}</div>}
+          {error && !loading && <div className="panel map-placeholder">{strings.mapError}</div>}
 
           <section className="map-banner" aria-label="쿠팡 파트너스 안내">
             <a
@@ -125,10 +159,19 @@ function App() {
         </section>
       </main>
 
-      <DetailDrawer restaurant={selectedRestaurant} onClose={() => setSelectedId(null)} />
+      <DetailDrawer
+        restaurant={selectedRestaurant}
+        onClose={() => setSelectedId(null)}
+        labels={{
+          ...strings.detail,
+          top7: strings.badges.top7,
+          season: strings.badges.season,
+          team: strings.badges.team,
+        }}
+      />
 
       <footer className="footer">
-        비공식 팬메이드 / 방송·제작사·출연자와 무관 / 정보는 수시로 변동 가능 / 링크는 각 서비스로 연결
+        {strings.footer}
       </footer>
     </div>
   );

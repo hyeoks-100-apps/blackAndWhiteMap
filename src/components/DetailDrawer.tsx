@@ -4,6 +4,24 @@ import { Restaurant } from '../types';
 interface DetailDrawerProps {
   restaurant: Restaurant | null;
   onClose: () => void;
+  labels: {
+    top7: string;
+    season: (season: number) => string;
+    team: (team: Restaurant['chef']['team']) => string;
+    close: string;
+    address: string;
+    category: string;
+    tags: string;
+    instagram: string;
+    updated: string;
+    copy: string;
+    copied: string;
+    naverBooking: string;
+    naverPlace: string;
+    shareLink: string;
+    directions: string;
+    call: string;
+  };
 }
 
 const buildGoogleMapsLink = (lat: number, lng: number) =>
@@ -16,7 +34,7 @@ const buildShareUrl = (id: string) => {
   return url.toString();
 };
 
-export function DetailDrawer({ restaurant, onClose }: DetailDrawerProps) {
+export function DetailDrawer({ restaurant, onClose, labels }: DetailDrawerProps) {
   const [copied, setCopied] = useState<'address' | 'link' | null>(null);
 
   useEffect(() => {
@@ -47,24 +65,24 @@ export function DetailDrawer({ restaurant, onClose }: DetailDrawerProps) {
           <h2>{info.name}</h2>
           <p className="muted">{chef.name}</p>
           <div className="badges">
-            {chef.isTop7 && <span className="badge primary">TOP7</span>}
-            {chef.season && <span className="badge">시즌 {chef.season}</span>}
-            <span className={`badge team ${chef.team}`}>팀 {chef.team}</span>
+            {chef.isTop7 && <span className="badge primary">{labels.top7}</span>}
+            {chef.season && <span className="badge">{labels.season(chef.season)}</span>}
+            <span className={`badge team ${chef.team}`}>{labels.team(chef.team)}</span>
           </div>
         </div>
-        <button className="link-btn" onClick={onClose} aria-label="닫기">
+        <button className="link-btn" onClick={onClose} aria-label={labels.close}>
           ✕
         </button>
       </div>
 
       <div className="detail-body">
         <div className="info-row">
-          <span className="label">주소</span>
+          <span className="label">{labels.address}</span>
           <div className="info-value">
             <span>{info.address}</span>
             {navigator?.clipboard && (
               <button className="pill" onClick={() => handleCopy(info.address, 'address')} aria-live="polite">
-                {copied === 'address' ? '복사됨' : '복사'}
+                {copied === 'address' ? labels.copied : labels.copy}
               </button>
             )}
           </div>
@@ -72,7 +90,7 @@ export function DetailDrawer({ restaurant, onClose }: DetailDrawerProps) {
 
         {info.category && info.category.length > 0 && (
           <div className="info-row">
-            <span className="label">카테고리</span>
+            <span className="label">{labels.category}</span>
             <div className="badges">
               {info.category.map((cat) => (
                 <span key={cat} className="badge muted">
@@ -85,7 +103,7 @@ export function DetailDrawer({ restaurant, onClose }: DetailDrawerProps) {
 
         {tags && tags.length > 0 && (
           <div className="info-row">
-            <span className="label">태그</span>
+            <span className="label">{labels.tags}</span>
             <div className="badges">
               {tags.map((tag) => (
                 <span key={tag} className="badge muted">
@@ -98,7 +116,7 @@ export function DetailDrawer({ restaurant, onClose }: DetailDrawerProps) {
 
         {info.instagram && (
           <div className="info-row">
-            <span className="label">인스타그램</span>
+            <span className="label">{labels.instagram}</span>
             <a className="link" href={info.instagram} target="_blank" rel="noreferrer noopener">
               {info.instagram}
             </a>
@@ -107,7 +125,7 @@ export function DetailDrawer({ restaurant, onClose }: DetailDrawerProps) {
 
         {updatedAt && (
           <div className="info-row">
-            <span className="label">업데이트</span>
+            <span className="label">{labels.updated}</span>
             <span className="muted">{updatedAt}</span>
           </div>
         )}
@@ -116,25 +134,25 @@ export function DetailDrawer({ restaurant, onClose }: DetailDrawerProps) {
       <div className="actions">
         {info.naverBookingUrl && (
           <a className="button primary" href={info.naverBookingUrl} target="_blank" rel="noreferrer noopener">
-            네이버 예약
+            {labels.naverBooking}
           </a>
         )}
         {info.naverPlaceUrl && (
           <a className="button" href={info.naverPlaceUrl} target="_blank" rel="noreferrer noopener">
-            네이버 플레이스
+            {labels.naverPlace}
           </a>
         )}
         {navigator?.clipboard && (
           <button className="button" type="button" onClick={() => handleCopy(shareUrl, 'link')}>
-            링크 복사
+            {labels.shareLink}
           </button>
         )}
         <a className="button" href={buildGoogleMapsLink(info.lat, info.lng)} target="_blank" rel="noreferrer noopener">
-          길찾기 (Google)
+          {labels.directions}
         </a>
         {info.phone && (
           <a className="button" href={`tel:${info.phone}`}>
-            전화하기
+            {labels.call}
           </a>
         )}
       </div>

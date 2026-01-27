@@ -37,11 +37,39 @@ body {
   font-size: 1.6rem;
 }
 
+.topbar-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
 .eyebrow {
   margin: 0;
   color: #6366f1;
   font-weight: 600;
   letter-spacing: 0.02em;
+}
+
+.language-select select {
+  border: 1px solid #e2e8f0;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 13px;
+  background: #ffffff;
+  color: #1e293b;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .layout {
@@ -468,6 +496,19 @@ select {
   .topbar {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .topbar-meta {
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .language-select {
+    width: 100%;
+  }
+
+  .language-select select {
+    width: 100%;
   }
 
   .field-group {
