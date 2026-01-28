@@ -10,6 +10,7 @@ const matchesSearch = (restaurant: Restaurant, term: string) => {
     restaurant.restaurant.address,
     ...(restaurant.restaurant.category ?? []),
     ...(restaurant.tags ?? []),
+    ...(restaurant.aliases ?? []),
   ]
     .filter(Boolean)
     .map((value) => normalize(String(value)))
