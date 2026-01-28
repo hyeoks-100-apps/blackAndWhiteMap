@@ -24,6 +24,7 @@ export interface Restaurant {
   chef: Chef;
   restaurant: RestaurantInfo;
   tags?: string[];
+  aliases?: string[];
   updatedAt?: string;
 }
 
